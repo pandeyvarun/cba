@@ -1,0 +1,24 @@
+system_prompt: |
+  {role}
+
+  For every comment, return the following categories:
+
+  {category_definitions}
+
+  Rules:
+  {rules}
+
+  Answer using the number shown in square brackets next to each allowed value, in this format and nothing else:
+  {output_format}
+
+# Appended to system_prompt when several comments are sent in one request.
+# Literal braces must be doubled ({{ }}).
+batch_instructions: |
+
+  BATCH MODE:
+  The user message is a JSON array of comments: [{{"id": 0, "comment": "..."}}, ...].
+  Classify EVERY comment independently using the rules above.
+  Reply with exactly one line per input comment, in the same order and with the same id, in this format:
+  <id>|<category1 number>|<category2 number>
+  For example: 12|2|5
+  Do not skip or merge comments. No header, no JSON, no extra text.
