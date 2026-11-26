@@ -1,0 +1,40 @@
+name: scheduled-run
+# Weekly incremental collection from the sources enabled in config/sources.yaml, then the full pipeline.
+# Never pushes to Jira. Add credentials as repository secrets only for the channels you enable.
+on:
+  schedule: [{cron: "0 20 * * 0"}]     # Sunday 20:00 UTC (Monday morning AEST)
+  workflow_dispatch:
+    inputs:
+      mode: {description: "rules | hybrid | llm", default: "rules"}
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12", cache: pip}
+      - run: pip install -e ".[collect,llm]"
+      - name: Restore raw store (incremental, de-duplicated across runs)
+        uses: actions/cache@v4
+        with:
+          path: data/raw
+          key: raw-store-${{ github.run_id }}
+          restore-keys: raw-store-
+      - name: Run pipeline
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+          REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
+          SERVICENOW_INSTANCE: ${{ secrets.SERVICENOW_INSTANCE }}
+          SERVICENOW_USER: ${{ secrets.SERVICENOW_USER }}
+          SERVICENOW_PASSWORD: ${{ secrets.SERVICENOW_PASSWORD }}
+        run: python -m ci run --incremental --mode "${{ github.event.inputs.mode || 'rules' }}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: customer-intelligence
+          path: |
+            dist/index.html
+            data/reports/backlog.json
+            data/reports/jira_import.csv
+            data/reports/insights.json
+          retention-days: 30

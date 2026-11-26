@@ -1,0 +1,11 @@
+---
+description: Conventions for Python pipeline code
+globs: src/ci/**/*.py,tests/**/*.py
+alwaysApply: false
+---
+- Python 3.10+, type hints, small pure functions, `ruff`-clean.
+- Each stage package exposes one entry function (`collect_all`, `process_df`, `categorise_df`, `analyse_df`, `build_backlog`, `build_ui`); keep CLI wiring in `cli.py`.
+- Read paths/thresholds from `config.settings()`; never hard-code thresholds, labels or regexes - they live in `config/*.json|yaml`.
+- Optional dependencies (anthropic, google-play-scraper, praw) are imported lazily inside functions.
+- Every new rule, collector or metric gets a test. Tests run offline: no network, no API keys (use `ci.llm.set_client(FakeClient())`).
+- `itertuples()` renames columns that start with an underscore - do not use such column names.

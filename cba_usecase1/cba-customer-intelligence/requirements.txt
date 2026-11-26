@@ -1,0 +1,16 @@
+pandas>=2.0
+pyyaml>=6.0
+requests>=2.31
+openpyxl>=3.1
+vaderSentiment>=3.3
+# optional: LLM categorisation / recommendations
+anthropic>=0.40
+# optional: live collectors
+google-play-scraper>=1.2
+praw>=7.7
+# dev
+pytest>=8.0
+httpx>=0.27
+# optional: HTTP API (ci serve)
+fastapi>=0.110
+uvicorn>=0.29

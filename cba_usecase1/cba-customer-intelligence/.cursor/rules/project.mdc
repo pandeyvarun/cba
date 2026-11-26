@@ -1,0 +1,17 @@
+---
+description: Project overview, commands and non-negotiable rules for the CBA Customer Intelligence pipeline
+alwaysApply: true
+---
+# CBA Customer Intelligence
+
+Pipeline: collect -> process -> categorise -> analyse -> recommend -> UI. Package `src/ci/`, config in `config/`, prompts in `prompts/`, skill specs in `skills/`.
+Start by reading `AGENTS.md` and `docs/context/*` (chat history, requirements, open items).
+
+Commands: `make demo`, `make test`, `make eval`, `python -m ci <stage>`.
+
+Rules:
+- Statistics are computed in code, never by an LLM.
+- Stages exchange CSV files only (see `docs/data-contract.md`).
+- Never read or print `.env`; never commit raw data or credentials.
+- No live side effects (credentialed collectors, Jira push) without explicit user approval; Jira stays dry-run by default.
+- Report segment, period and n with any result; results are directional.

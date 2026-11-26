@@ -1,0 +1,4 @@
+{"result": [
+  {"number": "CS0001", "opened_at": "2026-11-03 09:10:00", "short_description": "Cannot log in", "description": "Customer locked out after netcode failed."},
+  {"number": "CS0002", "opened_at": "2026-09-01 10:00:00", "short_description": "Fee dispute", "description": ""}
+]}

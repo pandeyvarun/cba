@@ -1,0 +1,10 @@
+---
+description: Rules for LLM prompt templates
+globs: prompts/**/*.md
+alwaysApply: false
+---
+- Format: YAML frontmatter (`name`, `description`, `inputs`, `output`, `stage`) then `## system` and `## user` sections; variables as `{{name}}`.
+- Every variable used must be listed in `inputs` (enforced by `tests/test_prompts.py`).
+- Output schema in the prompt must match the Python validator (`categorise/llm.py`, `recommend/llm.py`).
+- Never ask the model for numbers or to compute statistics; pass computed values in.
+- Add a failing example to `evals/classification_golden.jsonl` before changing `categorise_batch.md`; run `make eval`.

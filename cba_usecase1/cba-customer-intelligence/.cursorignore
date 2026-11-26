@@ -1,0 +1,6 @@
+.env
+.env.*
+data/raw/
+data/input/
+data/interim/
+data/processed/

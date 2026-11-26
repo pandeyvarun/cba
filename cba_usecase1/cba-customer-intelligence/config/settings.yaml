@@ -1,0 +1,60 @@
+# Central settings. Override any value with --set key=value on the CLI or edit here.
+project:
+  name: CBA Customer Intelligence
+  as_of: null            # set to YYYY-MM-DD to pin reporting date; null = latest comment date
+
+banks: [CBA, ANZ, NAB, Westpac]     # first entry is "our bank"
+our_bank: CBA
+
+paths:
+  raw: data/raw
+  interim: data/interim
+  processed: data/processed
+  reports: data/reports
+  dist: dist
+
+collect:
+  overlap_days: 3         # --incremental re-fetches this many days before the newest stored date
+
+processing:
+  min_chars: 12           # minimum length for UNRATED text (Reddit, Hacker News, tickets)
+  min_chars_rated: 1      # star-rated reviews are kept at any length ("Love it" + 5 stars is signal); set to 12 to restore the old rule
+  max_chars: 1200
+  redact_pii: true
+  drop_duplicates: true
+  hash_authors: true
+
+categorise:
+  mode: rules             # rules | llm | hybrid
+  llm_model: claude-sonnet-5-5
+  llm_batch_size: 25
+  low_confidence_margin: 1.5   # hybrid: send to LLM if best-score margin below this (or no match)
+  sentiment_pos_threshold: 0.4
+  sentiment_neg_threshold: -0.35
+
+analysis:
+  min_n_area: 10          # minimum comments before an area is benchmarked
+  min_n_gap: 30           # minimum comments (both sides) for gap / strength insights
+  momentum_min_n: 15      # per 3-month window
+  gap_weight: 2.0         # priority = negatives * (1 + max(0, gap) * gap_weight)
+  generic_areas:
+    - Overall app experience (general praise / complaint)
+    - Brand, pricing, policy & corporate conduct
+
+recommend:
+  mobile_only_default: true
+  priority_bands: {Highest: 70, High: 50, Medium: 30}   # score >= value
+  max_items: 15
+  llm_refine: false       # true = rewrite stories with Claude (needs ANTHROPIC_API_KEY)
+
+ui:
+  vendor_assets: true   # inline Chart.js + SheetJS from src/ci/ui/vendor (offline); false = load from CDN
+
+jira:
+  project_key: MOB
+  issue_type: Story
+  api_version: "3"
+  parent_key: null
+  component: null
+  labels: [customer-intelligence, voc]
+  dry_run: true           # push() only prints unless false

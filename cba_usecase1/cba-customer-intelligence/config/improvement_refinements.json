@@ -1,0 +1,126 @@
+{
+ "_comment": "Keyword refinements for the per-comment 'Areas for improvement' column: first matching rule for the comment's area replaces the playbook's generic improvement text. [area, regex (case-insensitive), improvement text]. Ported from the prototype lookups.py.",
+ "rules": [
+  [
+   "Login, authentication & security lock-outs",
+   "\\bface ?id|\\bbiometric|\\bfinger ?print|\\btouch ?id",
+   "Stabilise biometric login (Face ID/fingerprint) after updates and device changes; always offer a quick fallback to PIN/password."
+  ],
+  [
+   "Login, authentication & security lock-outs",
+   "\\blog(ged)? ?out|\\bkeeps? (logging|signing) (me )?out|\\bauto(matically)? log",
+   "Review session time-outs and forced log-outs; keep users signed in securely (e.g. biometric re-auth) rather than repeated full log-ins."
+  ],
+  [
+   "Login, authentication & security lock-outs",
+   "\\bnetcode|\\bsms code|\\bverification code|\\botp\\b|\\bone[- ]time|\\bcode (not|never)",
+   "Fix NetCode/SMS/OTP delivery delays and failures; add in-app push approval and alternate delivery options."
+  ],
+  [
+   "Login, authentication & security lock-outs",
+   "\\blocked out|\\bpassword (reset|doesn|not)|\\bforgot",
+   "Provide fast self-service reset/unlock (in-app identity check) so locked-out customers are not forced to call or visit a branch."
+  ],
+  [
+   "App crashes, bugs & performance",
+   "\\bupdate|\\bnew version|\\blatest version",
+   "Strengthen release testing and staged roll-outs; update regressions (new versions breaking login, loading or features) are the main driver of complaints here."
+  ],
+  [
+   "App crashes, bugs & performance",
+   "\\bslow|\\bloading|\\blag|\\btakes? (forever|ages)",
+   "Improve app start-up and screen-load speed; set and monitor performance targets for key journeys."
+  ],
+  [
+   "App crashes, bugs & performance",
+   "\\bbattery|\\boverheat|\\bhot\\b",
+   "Reduce battery drain/overheating (background activity, polling) on the app."
+  ],
+  [
+   "Fraud, scam & account holds / blocks",
+   "\\bcrypto|\\bbitcoin|\\bkraken|\\bbinance|\\bexchange",
+   "Review blanket crypto/exchange payment restrictions; replace with risk-based controls and clear explanations plus a way to request a limit increase."
+  ],
+  [
+   "Fraud, scam & account holds / blocks",
+   "\\brefund|\\breimburs|\\bcompensat|\\bscammed|\\bscam(s)? (victim|loss)|\\blost (\\$|money)|\\bstole",
+   "Speed up scam/fraud investigations and reimbursement decisions, give victims a named contact and clear timelines."
+  ],
+  [
+   "Fraud, scam & account holds / blocks",
+   "\\bblocked|\\bfrozen|\\bheld|\\bflagged|\\bunable to access|\\blocked",
+   "Cut false-positive account/card blocks, tell customers exactly why and how long, and enable instant self-service verification to release holds."
+  ],
+  [
+   "UI / UX, design & app features",
+   "\\bdark mode",
+   "Add dark mode and basic personalisation options requested by customers."
+  ],
+  [
+   "UI / UX, design & app features",
+   "\\bscreen ?shot|\\bshare (the )?(transaction|receipt)|\\breceipt",
+   "Restore transaction screenshot/share and add shareable receipts (PDF/image) for proof of payment."
+  ],
+  [
+   "UI / UX, design & app features",
+   "\\bnotification|\\balert",
+   "Add configurable real-time notifications (money in, card use, due dates)."
+  ],
+  [
+   "UI / UX, design & app features",
+   "\\bbudget|\\bspending|\\bsavings? goal|\\bcategor",
+   "Expand budgeting, spending insights and savings goals within the app."
+  ],
+  [
+   "UI / UX, design & app features",
+   "\\bnew (look|app|design|layout|version)|\\bredesign|\\bupdate",
+   "Consult customers before big redesigns/updates; keep familiar navigation and provide an opt-out or transition period."
+  ],
+  [
+   "Customer service & support",
+   "\\bon hold|\\bwait(ed|ing)? (time|times|for)|\\bhold (time|music)|\\bhours?\\b|\\bqueue",
+   "Reduce call wait times: offer call-back, extended hours and prominent in-app messaging."
+  ],
+  [
+   "Customer service & support",
+   "\\bchat ?bot|\\bai\\b|\\bvirtual assistant|\\blive chat",
+   "Make chat/virtual assistants resolve real issues and provide a one-tap handover to a human."
+  ],
+  [
+   "Customer service & support",
+   "\\bcomplain|\\bafca|\\bombudsman|\\bescalat",
+   "Streamline complaints handling: clear ownership, timeframes and escalation without customers having to repeat themselves."
+  ],
+  [
+   "Customer service & support",
+   "\\brude|\\bunhelpful|\\bignored|\\bdidn'?t (help|care|listen)",
+   "Coach frontline staff on empathy and ownership; track repeat contacts and first-contact resolution."
+  ],
+  [
+   "Payments & transfers (PayID / BPAY / Pay Anyone / NPP)",
+   "\\bpay ?id",
+   "Make PayID set-up/management simpler (add, change, delete) and surface clear payee-name confirmation."
+  ],
+  [
+   "Payments & transfers (PayID / BPAY / Pay Anyone / NPP)",
+   "\\bscheduled|\\brecurring|\\bdirect debit|\\bfuture",
+   "Improve scheduled/recurring payment set-up and visibility, with reminders before debits."
+  ],
+  [
+   "Statement access & download (PDF / e-statements)",
+   "\\bscreen ?shot",
+   "Allow screenshots/sharing of transaction details or provide an in-app download-as-PDF/image option."
+  ],
+  [
+   "Card payments, tap-to-pay & digital wallets",
+   "\\bapple ?pay|\\bgoogle ?pay|\\bwallet|\\btap",
+   "Improve Apple/Google Pay provisioning and tap-to-pay reliability; clearer error handling when a wallet card fails."
+  ],
+  [
+   "Card payments, tap-to-pay & digital wallets",
+   "\\bdeclin|\\bnot working|\\bwon'?t work",
+   "Give clear reasons for card declines and an instant way to resolve them (in-app unblock, retry)."
+  ]
+ ],
+ "na_text": "N/A - no specific product area identified in this comment"
+}

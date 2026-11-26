@@ -1,0 +1,8 @@
+---
+description: Privacy and side-effect guardrails
+alwaysApply: true
+---
+- PII (emails, phones, cards, BSB+account, TFN-like, CRN) is redacted in `process/clean.py` before any analysis or LLM call; keep it deterministic and tested.
+- Authors are salted hashes after processing.
+- `.env`, `data/raw`, `data/input` are git-ignored and Cursor-ignored; do not paste their contents into prompts or commits.
+- Do not run collectors that need credentials, `ci recommend --push`, or anything that writes to external systems unless the user explicitly asks.

@@ -1,0 +1,7 @@
+{"feed": {"entry": [
+  {"im:name": {"label": "CommBank"}, "id": {"label": "https://apps.apple.com/au/app/commbank/id310251202"}},
+  {"id": {"label": "11111"}, "updated": {"label": "2026-11-02T08:15:00-07:00"}, "im:rating": {"label": "1"}, "im:version": {"label": "9.2.1"},
+   "title": {"label": "Crashes on login"}, "content": {"label": "Since the update the app crashes every time I try Face ID."}, "author": {"name": {"label": "bob"}}},
+  {"id": {"label": "11112"}, "updated": {"label": "2026-10-20T08:15:00-07:00"}, "im:rating": {"label": "5"}, "im:version": {"label": "9.2.0"},
+   "title": {"label": "Love it"}, "content": {"label": "PayID payments are instant."}, "author": {"name": {"label": "amy"}}}
+]}}

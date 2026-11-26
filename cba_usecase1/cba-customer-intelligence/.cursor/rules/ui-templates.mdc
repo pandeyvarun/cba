@@ -1,0 +1,12 @@
+---
+description: Rules for the web app templates (single-file HTML app)
+globs: src/ci/ui/**,**/templates/*.{css,js,html}
+alwaysApply: false
+---
+- Output is one self-contained `dist/index.html`: CSS/JS inline, data as `<script type="application/json" id="data">` (escape `<` as `\u003c`).
+- Brand: CBA yellow `#FFCC00` + black, Inter font. Colours are CSS variables on `:root` with dark values (`prefers-color-scheme` and `[data-theme=dark]`).
+- No remote images; icons are inline SVG symbols. Scripts only from jsdelivr (Chart.js pinned) and cdnjs (SheetJS pinned).
+- Escape all data inserted with innerHTML (`esc()`); use textContent otherwise.
+- Never store API tokens in the page. Jira integration is export-based (CSV / bulk JSON / cURL).
+- Verify after changes: no console errors on every tab, no horizontal scroll at 390px, dark mode readable, numbers match `data/reports/insights.json`.
+- The in-browser classifier is a port of the Python rules; patterns come from `taxonomy.json` - avoid Python-only regex syntax.

@@ -1,0 +1,181 @@
+# One entry per feedback channel. Collectors read credentials from environment variables (.env).
+sources:
+  - name: Google Play (CBA)
+    collector: google_play
+    enabled: true
+    bank: CBA
+    params: {package: com.commbank.netbank, country: au, lang: en, count: 5000}
+
+  - name: Apple App Store (CBA)
+    collector: app_store
+    enabled: true
+    bank: CBA
+    params: {app_id: "310251202", country: au, pages: 10}
+
+  - name: Google Play (ANZ)
+    collector: google_play
+    enabled: false
+    bank: ANZ
+    params: {package: au.com.anz.android.gomoneyapp, country: au, lang: en, count: 3000}
+
+  - name: Reddit r/CommBank
+    collector: reddit
+    enabled: false
+    bank: CBA
+    params: {subreddit: CommBank, keywords: [commbank, netbank, cba], limit: 1000}
+
+  - name: ServiceNow complaints
+    collector: servicenow
+    enabled: false
+    bank: CBA
+    params:
+      table: sn_customerservice_case
+      query: category=feedback^ORcategory=complaint
+      text_fields: [short_description, description]
+      date_field: opened_at
+      limit: 5000
+
+  - name: File drop (CSV/XLSX/JSON)
+    collector: file_import
+    enabled: true
+    bank: CBA
+    params:
+      path: data/sample/sample_comments.csv
+      columns: {text: text, date: date, rating: rating, bank: bank, source: source}
+
+  - name: Workbook CBA
+    collector: file_import
+    enabled: false          # full historical dataset used to build the original workbook + dashboard
+    bank: CBA
+    params:
+      path: data/input/commbank-user-comments.xlsx      # first sheet = "Comments"
+      columns: {text: Comment, date: Date, rating: Rating, source: Source}
+
+  - name: Workbook ANZ
+    collector: file_import
+    enabled: false          # full historical dataset used to build the original workbook + dashboard
+    bank: ANZ
+    params:
+      path: data/input/anz-user-comments.xlsx      # first sheet = "Comments"
+      columns: {text: Comment, date: Date, rating: Rating, source: Source}
+
+  - name: Workbook NAB
+    collector: file_import
+    enabled: false          # full historical dataset used to build the original workbook + dashboard
+    bank: NAB
+    params:
+      path: data/input/nab-user-comments.xlsx      # first sheet = "Comments"
+      columns: {text: Comment, date: Date, rating: Rating, source: Source}
+
+  - name: Workbook Westpac
+    collector: file_import
+    enabled: false          # full historical dataset used to build the original workbook + dashboard
+    bank: Westpac
+    params:
+      path: data/input/westpac-user-comments.xlsx      # first sheet = "Comments"
+      columns: {text: Comment, date: Date, rating: Rating, source: Source}
+
+  # ---- Public, credential-free channels (disabled by default; run with --source "<name>" or enable in this file) ----
+  # Verified IDs: App Store IDs looked up via Apple's public search API; Google Play package NAB verified on play.google.com.
+  # Not yet verified (add once checked): Google Play for Westpac and ANZ Plus; ProductReview.com.au (no stable API).
+  - name: Apple App Store (NAB)
+    collector: app_store
+    enabled: false
+    bank: NAB
+    params: {app_id: "373434223", country: au, pages: 10}
+
+  - name: Apple App Store (Westpac)
+    collector: app_store
+    enabled: false
+    bank: Westpac
+    params: {app_id: "299111811", country: au, pages: 10}
+
+  - name: Apple App Store (ANZ Australia)
+    collector: app_store
+    enabled: false
+    bank: ANZ
+    params: {app_id: "870929663", country: au, pages: 10}
+
+  - name: Apple App Store (ANZ Plus)
+    collector: app_store
+    enabled: false
+    bank: ANZ
+    params: {app_id: "1495738612", country: au, pages: 10}
+
+  - name: Google Play (NAB)
+    collector: google_play
+    enabled: false
+    bank: NAB
+    params: {package: au.com.nab.mobile, country: au, lang: en, count: 5000}
+
+  - name: Hacker News (CBA)
+    collector: hackernews
+    enabled: false
+    bank: CBA
+    params: {query: commbank, pages: 10}
+
+  - name: Hacker News (ANZ)
+    collector: hackernews
+    enabled: false
+    bank: ANZ
+    params: {query: "anz bank", pages: 10}
+
+  - name: Hacker News (NAB)
+    collector: hackernews
+    enabled: false
+    bank: NAB
+    params: {query: "nab bank", pages: 10}
+
+  - name: Hacker News (Westpac)
+    collector: hackernews
+    enabled: false
+    bank: Westpac
+    params: {query: westpac, pages: 10}
+
+  # ---- Reddit via the public Arctic Shift archive (no credentials; reddit.com itself blocks scripted access) ----
+  # Brand subreddits keep every comment (all_comments); broad subreddits keep only posts/comments matching `keywords`.
+  - name: Reddit archive r/CommBank
+    collector: reddit_archive
+    enabled: false
+    bank: CBA
+    params: {subreddit: CommBank, keywords: [commbank, netbank, cba], all_comments: true, post_limit: 1000, comment_limit: 3000}
+  - name: Reddit archive r/AusFinance (CBA)
+    collector: reddit_archive
+    enabled: false
+    bank: CBA
+    params: {subreddit: AusFinance, keywords: [commbank, commonwealth bank, netbank], post_limit: 500, comment_limit: 1500}
+  - name: Reddit archive r/australia (CBA)
+    collector: reddit_archive
+    enabled: false
+    bank: CBA
+    params: {subreddit: australia, keywords: [commbank, commonwealth bank], post_limit: 300, comment_limit: 1000}
+  - name: Reddit archive r/ANZ
+    collector: reddit_archive
+    enabled: false
+    bank: ANZ
+    params: {subreddit: ANZ, keywords: [anz], all_comments: true, post_limit: 1000, comment_limit: 2000}
+  - name: Reddit archive r/AusFinance (ANZ)
+    collector: reddit_archive
+    enabled: false
+    bank: ANZ
+    params: {subreddit: AusFinance, keywords: ["anz bank", "anz plus", "anz app"], post_limit: 500, comment_limit: 1500}
+  - name: Reddit archive r/NAB
+    collector: reddit_archive
+    enabled: false
+    bank: NAB
+    params: {subreddit: NAB, keywords: [nab], all_comments: true, post_limit: 500, comment_limit: 1000}
+  - name: Reddit archive r/AusFinance (NAB)
+    collector: reddit_archive
+    enabled: false
+    bank: NAB
+    params: {subreddit: AusFinance, keywords: ["nab bank", "nab app", "national australia bank"], post_limit: 500, comment_limit: 1500}
+  - name: Reddit archive r/Westpac
+    collector: reddit_archive
+    enabled: false
+    bank: Westpac
+    params: {subreddit: Westpac, keywords: [westpac], all_comments: true, post_limit: 1000, comment_limit: 2000}
+  - name: Reddit archive r/AusFinance (Westpac)
+    collector: reddit_archive
+    enabled: false
+    bank: Westpac
+    params: {subreddit: AusFinance, keywords: [westpac, "st george"], post_limit: 500, comment_limit: 1500}

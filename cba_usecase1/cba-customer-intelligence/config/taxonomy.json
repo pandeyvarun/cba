@@ -1,0 +1,716 @@
+{
+ "_comment": "Rule-based taxonomy. Order = tie-break priority. Each pattern is [regex, weight] matched case-insensitively.",
+ "other": {
+  "primary": "Other (not classifiable)",
+  "secondary": "No specific product area identified"
+ },
+ "areas": [
+  {
+   "primary": "Onboarding",
+   "secondary": "Identity verification (KYC / ID checks)",
+   "patterns": [
+    [
+     "\\bverif(y|ied|ication|ying)\\b",
+     2
+    ],
+    [
+     "\\bidentity\\b",
+     2
+    ],
+    [
+     "\\bid check|photo id|100 points|proof of (id|identity)",
+     3
+    ],
+    [
+     "\\bpassport\\b",
+     2
+    ],
+    [
+     "driver'?s? ?licen[cs]e",
+     2
+    ],
+    [
+     "\\bselfie|face scan|liveness|\\bkyc\\b|certified cop",
+     3
+    ]
+   ]
+  },
+  {
+   "primary": "Onboarding",
+   "secondary": "Account opening & sign-up",
+   "patterns": [
+    [
+     "\\bopen(ing|ed)? (a |an |my |the |new |another )?(\\w+ )?(bank )?account",
+     3
+    ],
+    [
+     "\\bsign(ing|ed)? up\\b",
+     2
+    ],
+    [
+     "\\bnew customer",
+     3
+    ],
+    [
+     "\\bset(ting)? up (a |an |my |the |new )?(\\w+ )?account",
+     3
+    ],
+    [
+     "\\bjoin(ed|ing)? (the )?(bank|cba|commbank|anz|nab|westpac)",
+     2
+    ],
+    [
+     "\\bswitch(ed|ing)? (to|over)\\b",
+     2
+    ],
+    [
+     "\\bnew account",
+     2
+    ],
+    [
+     "\\bapplication process|\\bapply online|\\bonboard",
+     2
+    ]
+   ]
+  },
+  {
+   "primary": "Onboarding",
+   "secondary": "App registration & device set-up",
+   "patterns": [
+    [
+     "\\bregist(er|ered|ering|ration)\\b",
+     3
+    ],
+    [
+     "\\bactivat(e|ed|ion|ing)\\b",
+     2
+    ],
+    [
+     "new (phone|device|handset)",
+     3
+    ],
+    [
+     "\\bnetcode (setup|set up)|set ?up (the )?app",
+     3
+    ],
+    [
+     "\\b(re)?install(ed|ing)?\\b",
+     2
+    ],
+    [
+     "\\bdownload(ed|ing)? (the )?app",
+     2
+    ],
+    [
+     "first time (log|us|open)",
+     3
+    ],
+    [
+     "\\bmigrat(e|ed|ion)\\b",
+     2
+    ]
+   ]
+  },
+  {
+   "primary": "Onboarding",
+   "secondary": "Product applications (cards, loans, home loans)",
+   "patterns": [
+    [
+     "\\b(credit card|loan|mortgage|home loan|personal loan) application",
+     3
+    ],
+    [
+     "\\bpre-?approv",
+     3
+    ],
+    [
+     "\\bapplied for\\b|\\bapply for\\b|\\bapplying for\\b",
+     2
+    ],
+    [
+     "\\bborrowing (power|capacity)",
+     3
+    ],
+    [
+     "\\bapproved\\b|\\bapproval\\b|\\bdeclined (my )?(application|loan)",
+     2
+    ],
+    [
+     "\\bcredit (check|assessment|score)",
+     2
+    ]
+   ]
+  },
+  {
+   "primary": "Onboarding",
+   "secondary": "Account closure & switching away",
+   "patterns": [
+    [
+     "\\bclos(e|ed|ing|ure) (of )?(my |the |your |his |her |their )?(\\w+ )?account",
+     3
+    ],
+    [
+     "\\bswitch(ed|ing)? (away|banks?)\\b|\\bleav(e|ing) (the |this )?bank|\\bleft (the )?(bank|cba|commbank|anz|nab|westpac)",
+     3
+    ],
+    [
+     "\\bmov(e|ed|ing) (my )?(money|accounts?|banking) (to|from)",
+     2
+    ],
+    [
+     "\\bdebank|\\bban(ned|ning)? me|\\bexit(ed)? (me|customer)",
+     2
+    ]
+   ]
+  },
+  {
+   "primary": "Statements",
+   "secondary": "Statement access & download (PDF / e-statements)",
+   "patterns": [
+    [
+     "\\be-?statements?\\b",
+     3
+    ],
+    [
+     "\\bstatements?\\b",
+     3
+    ],
+    [
+     "\\bpaperless\\b|\\bpaper statement",
+     3
+    ],
+    [
+     "\\bpdf\\b",
+     2
+    ],
+    [
+     "\\bproof of balance|\\bbalance letter",
+     2
+    ],
+    [
+     "\\bdownload(ing|ed)? (my |the |a |our |all )?(\\w+ )?statements?|\\bstatements? (download|export|pdf)",
+     4
+    ]
+   ]
+  },
+  {
+   "primary": "Statements",
+   "secondary": "Transaction history, search & export",
+   "patterns": [
+    [
+     "transaction (history|list|search|details)",
+     3
+    ],
+    [
+     "\\bexport(ing|ed)?\\b|\\bcsv\\b|\\bofx\\b|\\bqif\\b",
+     3
+    ],
+    [
+     "\\bhistory\\b",
+     2
+    ],
+    [
+     "\\b(search|find|view|see|look(ing)? (up|at)) (old|past|previous|older|my) transactions?",
+     3
+    ],
+    [
+     "\\bolder transactions|\\bpast transactions|\\bold transactions",
+     3
+    ],
+    [
+     "\\bscreen ?shots?\\b|\\bshare (the )?(transaction|receipt|payment)|\\breceipts?\\b",
+     3
+    ],
+    [
+     "\\b(date range|scroll)",
+     1
+    ],
+    [
+     "\\btransactions? (not|don'?t|doesn'?t|aren'?t|isn'?t) (show|appear|display)",
+     3
+    ],
+    [
+     "\\bmissing transaction",
+     3
+    ]
+   ]
+  },
+  {
+   "primary": "Statements",
+   "secondary": "Statement accuracy, merchant names & descriptions",
+   "patterns": [
+    [
+     "\\bmerchant (name|descriptor)|\\btransaction description|\\bdescriptions?\\b",
+     2
+    ],
+    [
+     "\\bunclear (descriptor|description|reference)|\\breference (shows|number)",
+     2
+    ],
+    [
+     "\\bwrong (balance|amount)|\\bincorrect (balance|amount)|\\bbalance (is|was|shows|showing) (wrong|incorrect)",
+     3
+    ],
+    [
+     "\\bdouble (charged|debited)|\\bduplicate (charge|transaction)",
+     2
+    ]
+   ]
+  },
+  {
+   "primary": "Statements",
+   "secondary": "Tax, interest & account letters / summaries",
+   "patterns": [
+    [
+     "\\btax (summary|time|statement|return)|\\bnotice of assessment",
+     3
+    ],
+    [
+     "\\binterest (certificate|summary|statement)|\\bannual summary|\\bincome summary",
+     3
+    ],
+    [
+     "\\bconfirmation letter|\\bletter of (confirmation|reference)|\\baccount confirmation",
+     3
+    ]
+   ]
+  },
+  {
+   "primary": "Transaction",
+   "secondary": "Fraud, scam & account holds / blocks",
+   "patterns": [
+    [
+     "\\brestrict(ed|s|ing)? (access|my (money|funds|account))|\\bfraud\\w*|\\bscam(s|med|mer|mers|ming)?\\b",
+     3
+    ],
+    [
+     "\\b(blocked|blocking|block(s)?|frozen|freez(e|ing)|held|hold)\\b (on )?(my |the |our )?(card|account|payment|transaction|funds|money|transfer)",
+     3
+    ],
+    [
+     "\\b(card|account|payment|transaction|funds|money|transfer)s? (was |were |got |has been |been |is |are )?(blocked|frozen|held|flagged|restricted|suspended)",
+     3
+    ],
+    [
+     "\\bsuspicious\\b|\\bunauthori[sz]ed\\b|\\bflagged\\b|\\bdispute[sd]?\\b|\\bchargeback\\b|\\bstolen\\b|\\bhacked\\b|\\brestrict(ed|ion)s? (on )?(my |the )?(account|card)",
+     2
+    ],
+    [
+     "\\bsecurity (hold|check|review)|\\bscam (protect|warning|alert)|\\binvestment scam|\\bmule\\b",
+     3
+    ],
+    [
+     "\\bpay ?id\\b.{0,40}\\b(blocked|held|frozen|flagged|restricted)\\b|\\bcrypto(currency)?\\b|\\bcoinspot|\\bbinance",
+     3
+    ]
+   ]
+  },
+  {
+   "primary": "Transaction",
+   "secondary": "Payment limits",
+   "patterns": [
+    [
+     "\\b(daily|weekly|monthly|transfer|payment|payid|bpay|transaction|withdrawal|atm) limit",
+     3
+    ],
+    [
+     "\\blimits?\\b",
+     1
+    ],
+    [
+     "\\bexceed(ed|s)? (the |my )?limit|over the limit|increase (my |the )?limit",
+     3
+    ]
+   ]
+  },
+  {
+   "primary": "Transaction",
+   "secondary": "Pending, delayed, failed or missing transactions",
+   "patterns": [
+    [
+     "\\bpending\\b",
+     3
+    ],
+    [
+     "\\bdelay(s|ed)?\\b",
+     2
+    ],
+    [
+     "\\bfailed (payment|transfer|transaction)|\\b(payment|transfer|transaction)s? (failed|fails|declined|rejected|reversed|bounced)",
+     3
+    ],
+    [
+     "\\bdidn'?t (arrive|go through|show)|\\bhasn'?t (arrived|come through|cleared|gone through)|\\bnot (arrived|received)|\\btook (days|a week|hours)|\\bprocessing\\b|\\bstuck (in|on) (processing|pending)",
+     3
+    ],
+    [
+     "\\bnever (arrived|received)|\\bwhere('?s| is) my (money|payment|transfer|refund)",
+     3
+    ],
+    [
+     "\\bhas not (arrived|cleared)|\\bhave not (received)|\\brefund",
+     2
+    ],
+    [
+     "\\b(money|funds|payment|transfer|refund|deposit)s? (is |are |has |have |was |were )?(missing|gone|disappeared|vanished)\\b|\\bdisappear(ed|s)\\b",
+     3
+    ]
+   ]
+  },
+  {
+   "primary": "Transaction",
+   "secondary": "Payments & transfers (PayID / BPAY / Pay Anyone / NPP)",
+   "patterns": [
+    [
+     "\\bpay ?id\\b|\\bbpay\\b|\\bosko\\b|\\bnpp\\b|\\bpay ?anyone\\b|\\bnew payments platform",
+     3
+    ],
+    [
+     "\\btransfer(s|red|ring)?\\b",
+     2
+    ],
+    [
+     "\\b(send|sent|sending) (money|funds|payment)",
+     2
+    ],
+    [
+     "\\bscheduled payment|\\bfuture[- ]dated|\\bdirect debit|\\bautomatic payment|\\bpay(ing)? (a )?(bill|bills|rent|someone|friends?)",
+     2
+    ],
+    [
+     "\\bpayments?\\b",
+     1
+    ],
+    [
+     "\\bbsb\\b",
+     2
+    ],
+    [
+     "\\bsplit (a )?(bill|payment)",
+     2
+    ]
+   ]
+  },
+  {
+   "primary": "Transaction",
+   "secondary": "Card payments, tap-to-pay & digital wallets",
+   "patterns": [
+    [
+     "\\bapple ?pay|google ?pay|\\bgpay|samsung pay|\\bwallet\\b|\\bcontactless\\b|\\btap (to pay|and pay|&)|\\btap ?pay\\b",
+     3
+    ],
+    [
+     "\\bcard (declined|not working|won'?t work|payment|transaction)",
+     3
+    ],
+    [
+     "\\b(debit|credit|virtual|visa|mastercard|eftpos|travel) card",
+     2
+    ],
+    [
+     "\\bcard (controls?|lock|freeze)|\\block (my |the )?card|\\bpin\\b.*\\bcard|\\bcard\\b.*\\bpin\\b",
+     2
+    ],
+    [
+     "\\beftpos|\\bpos terminal|\\bpayWave|\\bpaywave",
+     3
+    ],
+    [
+     "\\bonline purchase|\\bin[- ]store purchase|\\bcard\\b",
+     1
+    ]
+   ]
+  },
+  {
+   "primary": "Transaction",
+   "secondary": "Fees, surcharges & charges",
+   "patterns": [
+    [
+     "\\b(monthly|account|annual|overdraw\\w*|late|atm|foreign|international|dishonour\\w*|service|maintenance|exit|break) fees?",
+     3
+    ],
+    [
+     "\\bfees?\\b",
+     2
+    ],
+    [
+     "\\bsurcharg\\w+",
+     3
+    ],
+    [
+     "\\bcharg(e|ed|es|ing)\\b",
+     1
+    ],
+    [
+     "\\bhidden (fee|cost|charge)",
+     3
+    ],
+    [
+     "\\boverdraft|\\boverdrawn",
+     2
+    ],
+    [
+     "\\bfee[- ]free|\\bno fees?\\b",
+     2
+    ],
+    [
+     "\\bcash ?back|\\binterchange",
+     1
+    ]
+   ]
+  },
+  {
+   "primary": "Transaction",
+   "secondary": "International & FX transfers",
+   "patterns": [
+    [
+     "\\binternational (transfer|payment|money|transaction|student)",
+     3
+    ],
+    [
+     "\\boverseas\\b",
+     2
+    ],
+    [
+     "\\bswift\\b|\\bwire (transfer|money)|\\bforeign (currency|exchange|transaction)|\\bfx\\b|\\bexchange rate",
+     3
+    ],
+    [
+     "\\bremit|\\bwise\\b|\\brevolut|\\bcurrency\\b|\\bmulti[- ]currency",
+     2
+    ],
+    [
+     "\\boverseas (transfer|payment|account|student)",
+     3
+    ],
+    [
+     "\\bbeneficiary",
+     2
+    ]
+   ]
+  },
+  {
+   "primary": "Transaction",
+   "secondary": "Cash, cheques, deposits & ATMs",
+   "patterns": [
+    [
+     "\\batms?\\b|\\bsmart atm",
+     3
+    ],
+    [
+     "\\bcash (deposit|withdrawal|withdraw|machine)|\\bdeposit(s|ed|ing)? cash",
+     3
+    ],
+    [
+     "\\bche(que|ck)s?\\b|\\bdeposit\\b|\\bdeposits\\b",
+     2
+    ],
+    [
+     "\\bcash\\b",
+     1
+    ],
+    [
+     "\\bbank@post|\\bpost office",
+     2
+    ]
+   ]
+  },
+  {
+   "primary": "Transaction",
+   "secondary": "Loans, mortgages & interest rates",
+   "patterns": [
+    [
+     "\\bhome loan|\\bmortgage|\\boffset\\b|\\bredraw|\\brefinanc\\w+|\\brepayments?\\b|\\bfixed rate|\\bvariable rate",
+     3
+    ],
+    [
+     "\\binterest rates?|\\bsavings? rates?|\\bbonus interest|\\bterm deposit|\\bhigh[- ]interest",
+     2
+    ],
+    [
+     "\\bloan(s)?\\b|\\bpersonal loan|\\bcar loan",
+     2
+    ],
+    [
+     "\\bhardship\\b|\\barrears\\b",
+     3
+    ],
+    [
+     "\\bcredit card (debt|balance|interest)|\\bbuy now pay later|\\bafterpay|\\bzip\\b|\\bstep ?pay|\\binterest[- ]free",
+     2
+    ]
+   ]
+  },
+  {
+   "primary": "Transaction",
+   "secondary": "Investments, shares & super",
+   "patterns": [
+    [
+     "\\bcommsec|\\bshares?\\b|\\betfs?\\b|\\bstocks?\\b|\\bbrokerage|\\binvest(ing|ment|ments|or|ors)?\\b|\\bsuper(annuation)?\\b|\\basx\\b",
+     2
+    ]
+   ]
+  },
+  {
+   "primary": "Non Functional",
+   "secondary": "Outages & service availability",
+   "patterns": [
+    [
+     "\\boutage|\\bdown (for|again|all|today|right now|at the moment)|\\bis down\\b|\\bwas down\\b|\\bservers? (down|issue)|\\bmaintenance|\\bunavailable|\\bnot available|\\boffline\\b|\\bservice (disruption|unavailable|interruption)",
+     3
+    ],
+    [
+     "\\bcan'?t (access|get on|get in|connect)|\\bunable to (access|connect)|\\bno (service|access)\\b|\\bnetwork (error|issue|problem|connection)|\\bconnection (error|issue|problem|lost)|\\btemporar(il)?y (unavailable|issue)",
+     2
+    ]
+   ]
+  },
+  {
+   "primary": "Non Functional",
+   "secondary": "Login, authentication & security lock-outs",
+   "patterns": [
+    [
+     "\\blog ?in\\b|\\blogin\\b|\\blog(ged)? ?(in|on)\\b|\\bsign(ed|ing)? ?in\\b|\\bpassword|\\bnetcode|\\bbiometric|\\bface ?id|\\bfinger ?print|\\btouch ?id",
+     3
+    ],
+    [
+     "\\blocked out|\\blog(ged)? ?out|\\bauto(matically)? log|\\bkeeps? (logging|signing) (me )?out|\\b2fa\\b|\\btwo[- ]?factor|\\bmulti[- ]?factor|\\botp\\b|\\bsms code|\\bverification code|\\bone[- ]time (code|password)|\\bcode (not|never) (arriv|receiv|sent)|\\bpasscode",
+     3
+    ],
+    [
+     "\\bpin\\b",
+     1
+    ],
+    [
+     "\\btoken\\b|\\bsecure code|\\bauthenticat\\w+|\\bsecurity (code|key|question)",
+     2
+    ]
+   ]
+  },
+  {
+   "primary": "Non Functional",
+   "secondary": "Security, privacy & device compatibility",
+   "patterns": [
+    [
+     "\\broot(ed)?\\b|\\bcustom rom|\\bmagisk|\\bjailbr\\w+|\\bdeveloper options|\\bvpn\\b|\\bcompatib\\w+|\\bandroid (version|\\d+)|\\bios (version|\\d+)|\\bolder (phone|android|iphone|device|ios)|\\bold (phone|android|iphone|device)|\\bunsupported (device|os|version)|\\bpixel\\b|\\bsamsung\\b|\\bgrapheneos|\\bsideload",
+     3
+    ],
+    [
+     "\\bprivacy|\\bdata (breach|leak|security|sharing|collection)|\\bcyber|\\bencrypt\\w+|\\bpermissions?\\b|\\bspyware|\\btracking",
+     2
+    ],
+    [
+     "\\bsecurity\\b|\\bsecure\\b",
+     1
+    ]
+   ]
+  },
+  {
+   "primary": "Non Functional",
+   "secondary": "App crashes, bugs & performance",
+   "patterns": [
+    [
+     "\\btakes? (forever|ages|too long)|\\bloading time|\\bforever\\b|\\bcrash(es|ed|ing)?\\b|\\bbugs?\\b|\\bbuggy|\\bglitch\\w*|\\bfreez(e|es|ing)\\b|\\bfroze\\b|\\bslow\\b|\\blag(s|gy|ging)?\\b|\\bunresponsive|\\bnot (working|loading|responding|opening)|\\b(doesn'?t|don'?t|won'?t|wont|can'?t|cant|isn'?t|stopped|stops) (work|working|load|loading|open|opening|respond)\\w*|\\bkeeps? (crashing|freezing|closing|stopping|failing)|\\bblank screen|\\bwhite screen|\\bstuck on\\b|\\bloading (screen|forever|for)|\\bspinning|\\bforce clos\\w*|\\bunexpected(ly)? (error|stop)|\\bsomething went wrong|\\berror (message|code)?\\b|\\bfails?\\b|\\bfailed\\b|\\bbroken\\b|\\bbroke\\b|\\bperformance\\b|\\bresponsive",
+     2
+    ],
+    [
+     "\\bupdate (broke|ruined|made|has|fixed|caused)|\\bafter (the )?(latest |last |new |recent )?update|\\bstability|\\breliab\\w+|\\bfix (it|this|the)|\\bfixed\\b",
+     2
+    ]
+   ]
+  },
+  {
+   "primary": "Non Functional",
+   "secondary": "UI / UX, design & app features",
+   "patterns": [
+    [
+     "\\bui\\b|\\bux\\b|\\binterface\\b|\\blayout\\b|\\bdesign(ed)?\\b|\\bredesign\\w*|\\bintuitive|\\bnavigat\\w+|\\buser[- ]friendly|\\beasy to (use|navigate|follow|understand)|\\bhard to (use|navigate|find|follow)|\\bclunky|\\bconfusing|\\bcluttered|\\bdark mode|\\bwidget|\\btheme|\\bnew (look|app|version|update|design|layout|feature)",
+     3
+    ],
+    [
+     "\\bupdates?\\b|\\bfeatures?\\b|\\bfunctionality|\\bmenu\\b|\\btabs?\\b|\\bhome ?screen|\\bshortcut|\\bcustomi[sz]\\w+|\\bbudget\\w*|\\bspending (insight|tracker|summary|category|categories)|\\bsavings? goals?|\\bdashboard|\\bnickname|\\bcategor(y|ies|ise|ize)|\\bpay ?day|\\bbills? (view|tab|reminder)|\\bapp (is|has|looks|feels)|\\bdoes(n'?t)? (not )?(have|support|allow|let)|\\bwish (it|they|there)|\\bwould (be )?(nice|great|love)|\\bshould (be able|have|add|allow)|\\badd(ed)? (a |an )?(option|feature|button)|\\bmissing (feature|option)",
+     2
+    ],
+    [
+     "\\bmulti[- ]?user|\\bapprovals?\\b|\\binvoic\\w+|\\bpermission levels?|\\buser roles?|\\bpayroll\\b|\\bxero\\b|\\bmyob\\b",
+     2
+    ]
+   ]
+  },
+  {
+   "primary": "Non Functional",
+   "secondary": "Customer service & support",
+   "patterns": [
+    [
+     "\\bcustomer (service|support|care|experience)|\\bcall ?cent(re|er)|\\bhelp ?(desk|line)|\\bhotline|\\bon hold\\b|\\bwait(ed|ing)? (time|times|for (an? )?(hour|hours|ages|days|weeks))|\\bhold (time|music)|\\bhours? (on|waiting)|\\bphone (call|support|line|banking|queue)|\\bcalled (them|the bank|cba|commbank|anz|nab|westpac)|\\bcalling (them|the bank)",
+     3
+    ],
+    [
+     "\\bsupport\\b|\\bstaff\\b|\\bagent\\b|\\bconsultant|\\bteller|\\bbanker\\b|\\brep(resentative)?\\b|\\bmanager\\b|\\bcomplain\\w*|\\bcomplaint|\\bafca\\b|\\bombudsman|\\brude\\b|\\bhelpful|\\bunhelpful|\\bignored|\\bno (one|reply|response)|\\bresolv\\w+|\\bescalat\\w+|\\blive chat|\\bchat ?bot|\\bmessag(e|ing) (the )?(team|support|bank)|\\bsocial media team|\\bcase number|\\bgave up|\\bgot (nowhere|no help)|\\bdidn'?t (help|care|listen)",
+     2
+    ],
+    [
+     "\\bbranch(es)? (staff|manager|visit)|\\bin[- ]branch|\\bwent (in|into) (a |the )?branch|\\bvisited (a |the )?branch|\\bhelped me|\\bthank(s| you) (to |for )?(the )?(staff|team|ryan|lady|guy|man|woman)",
+     2
+    ]
+   ]
+  },
+  {
+   "primary": "Non Functional",
+   "secondary": "Notifications & alerts",
+   "patterns": [
+    [
+     "\\balert(ed|s)?\\b|\\bnotifications?\\b|\\bpush (notification|alert)|\\balerts?\\b|\\bsms (alert|notification|message)|\\btext message|\\bemail (alert|notification)",
+     3
+    ],
+    [
+     "\\bnotif\\b|\\breminders?\\b",
+     2
+    ]
+   ]
+  },
+  {
+   "primary": "Non Functional",
+   "secondary": "Branch closures & in-person access",
+   "patterns": [
+    [
+     "\\bbranch(es)? (clos\\w+|shut\\w*|network|access|availability)|\\bclos(e|ed|ing|ure) (of )?(the |our |local |more )?branch(es)?|\\bbranch clos\\w+|\\bnearest branch|\\bno (more )?branch(es)?|\\blocal branch|\\bbranch(es)?\\b|\\bface[- ]to[- ]face|\\bin person\\b|\\bregional\\b|\\brural\\b|\\bbanking hub",
+     3
+    ],
+    [
+     "\\baccessib\\w+|\\bscreen ?reader|\\btalkback|\\bvoiceover|\\bvision impair|\\bblind\\b|\\bdisabilit\\w+|\\belderly|\\bolder (people|customers|generation)|\\bseniors?\\b|\\bfont size|\\btext size|\\bcontrast",
+     3
+    ]
+   ]
+  },
+  {
+   "primary": "Non Functional",
+   "secondary": "Brand, pricing, policy & corporate conduct",
+   "patterns": [
+    [
+     "\\bceo\\b|\\bgreed\\w*|\\broyal commission|\\bfossil|\\besg\\b|\\bclimate (change|policy|target)|\\bjob (cuts|losses)|\\bredundanc\\w+|\\boffshor\\w+|\\boutsourc\\w+|\\bexecutive pay|\\brecord profits?|\\bprofits? (rose|up|record|soar)|\\bshareholders?|\\boligopoly|\\bbig (four|4)|\\bscandal|\\bmoney laundering|\\baustrac|\\bpenalt(y|ies)|\\bclass action|\\bbrand\\b|\\breputation|\\bcustomer loyalty|\\bdon'?t trust (the |this )?(bank|cba|commbank)|\\bcorrupt|\\bunethical|\\bethical",
+     2
+    ]
+   ]
+  },
+  {
+   "primary": "Non Functional",
+   "secondary": "Overall app experience (general praise / complaint)",
+   "patterns": [
+    [
+     "\\bterrific|\\bgreatest|\\bpleased|\\bthankful|\\bhelpful|\\befficient|\\bgreat app|\\bgood app|\\bbest (app|bank)|\\bbad app|\\bworst (app|bank)|\\bterrible|\\brubbish|\\buseless|\\bawful|\\bhate\\b|\\bloved?\\b|\\bexcellent|\\bfantastic|\\bawesome|\\bamazing|\\bperfect|\\bconvenient|\\bhandy|\\bsmooth|\\bsimple|\\bsatisfied|\\bhappy with|\\bthank(s| you)|\\bnice\\b|\\bgood\\b|\\bgreat\\b|\\bbad\\b|\\bpoor\\b|\\bdisappoint\\w*|\\bfrustrat\\w*|\\bannoy\\w*|\\bridiculous|\\bgarbage|\\btrash|\\bsucks?\\b|\\bcrap\\b|\\bpathetic|\\bunacceptable|\\bhorrible|\\bwonderful|\\bbrilliant|\\bfine\\b|\\bokay\\b|\\bok\\b|\\bworks (well|fine|great)|\\bapp\\b",
+     1
+    ],
+    [
+     "\\b(fast|quick|easy|simple|smooth) (and|&) (reliable|easy|simple|smooth|secure)|\\breliable (and|&) (fast|easy|simple|smooth|secure)",
+     3
+    ]
+   ]
+  }
+ ],
+ "weights": {
+  "Overall app experience": 0.6,
+  "Brand, pricing": 0.8
+ },
+ "bankword": "\\bbank|\\bcommbank|\\bcba\\b|\\bcommonwealth|\\banz\\b|\\bnab\\b|\\bwestpac|\\bst\\.? george|\\baccounts?\\b|\\bcards?\\b|\\bpayments?\\b|\\bloans?\\b|\\bmortgage|\\btransfers?\\b|\\bapp\\b|\\bbalance|\\bcredit|\\bdebit|\\binterest|\\bfees?\\b|\\batm|\\bbranch|\\bscam|\\bfraud|\\bnetbank|\\bnetcode|\\bpay ?id|\\bsavings?\\b|\\bdeposit"
+}

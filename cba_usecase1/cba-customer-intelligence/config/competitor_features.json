@@ -1,0 +1,300 @@
+{
+ "_comment": "Competitor mobile-app feature matrix from official guides. \"-\" = not mentioned (not proof of absence).",
+ "columns": [
+  "theme",
+  "feature",
+  "ANZ",
+  "NAB",
+  "Westpac (NZ, indicative)",
+  "source"
+ ],
+ "rows": [
+  [
+   "Login & security",
+   "Fingerprint / Face ID / passcode login",
+   "Yes (fingerprint, face scan, Voice ID; 4-digit PIN)",
+   "Yes (password, 4-digit passcode, fingerprint, Face ID)",
+   "Yes (Face ID, fingerprint or PIN)",
+   "ANZ Easy Read p15; NAB app page; Westpac NZ help index"
+  ],
+  [
+   "Login & security",
+   "One PIN across multiple devices",
+   "Yes - up to 5 devices, one 4-digit PIN",
+   "-",
+   "-",
+   "ANZ App FAQ"
+  ],
+  [
+   "Login & security",
+   "Manage / deregister devices in-app",
+   "Yes (Profile > name > Manage Devices)",
+   "-",
+   "Yes (manage app devices your details are saved on)",
+   "ANZ App FAQ; Westpac NZ help index"
+  ],
+  [
+   "Login & security",
+   "Voice ID step-up for high-value payments",
+   "Yes (above $1,000; up to $25,000/day Pay Anyone)",
+   "-",
+   "-",
+   "ANZ App FAQ; ANZ Easy Read p13"
+  ],
+  [
+   "Login & security",
+   "Published explanation of behavioural data collected",
+   "Yes (touch, keystroke, clipboard; not used for marketing)",
+   "-",
+   "Yes - guide listed ('collecting customer data while using Westpac One')",
+   "ANZ App FAQ; Westpac NZ help index"
+  ],
+  [
+   "Login & security",
+   "Quick Balance without logging in",
+   "Yes (iOS 18 removed Today View widget)",
+   "Yes",
+   "-",
+   "ANZ App FAQ; NAB app page"
+  ],
+  [
+   "Login & security",
+   "Business mobile token / administrator role",
+   "-",
+   "Yes (NAB Connect mobile token; Administrator)",
+   "-",
+   "NAB Connect mobile app page"
+  ],
+  [
+   "Payments",
+   "PayID / fast payments in the app",
+   "Yes (about 60 seconds)",
+   "Yes (set up unique PayID; Osko under a minute)",
+   "Add/edit payee guide",
+   "ANZ App FAQ; NAB app page; NAB Connect guide"
+  ],
+  [
+   "Payments",
+   "Schedule, edit, delete, skip future payments",
+   "Yes (one at a time; statuses Pending/Deleted/Skipped/Locked/Failed)",
+   "Yes - business app schedules up to 90 days",
+   "-",
+   "ANZ App FAQ; NAB Connect guide"
+  ],
+  [
+   "Payments",
+   "Alert when a scheduled payment fails",
+   "No (ANZ states customers are not notified)",
+   "-",
+   "-",
+   "ANZ App FAQ"
+  ],
+  [
+   "Payments",
+   "View ongoing card payments & direct debits",
+   "Yes ('Ongoing & One-off Payments')",
+   "-",
+   "-",
+   "ANZ App FAQ"
+  ],
+  [
+   "Payments",
+   "Choose overnight vs fast payment before submit",
+   "-",
+   "Yes (NAB Connect mobile)",
+   "-",
+   "NAB Connect guide"
+  ],
+  [
+   "Payments",
+   "Authorise / approve payments in app",
+   "-",
+   "Yes (NAB Connect multi-user authorisation)",
+   "Joint account payment approvals guide",
+   "NAB Connect guide; Westpac NZ help index"
+  ],
+  [
+   "Cards",
+   "Block / unblock card, report lost, change PIN",
+   "Yes (direct debits continue during temp block)",
+   "Yes (also reorder card, view digital cards)",
+   "Yes (block/cancel/replace)",
+   "ANZ App FAQ; NAB app page; Westpac NZ help index"
+  ],
+  [
+   "Cards",
+   "Control contactless / online / overseas payments",
+   "-",
+   "Yes",
+   "-",
+   "NAB app page"
+  ],
+  [
+   "Cards",
+   "Instalment Plan on credit card",
+   "Yes",
+   "-",
+   "-",
+   "ANZ App FAQ"
+  ],
+  [
+   "Cards",
+   "Activate card in app",
+   "Yes (most personal cards; business by phone)",
+   "-",
+   "-",
+   "ANZ App FAQ"
+  ],
+  [
+   "Insight & budgeting",
+   "Budgeting / cash prediction",
+   "Spendi daily budget indicator",
+   "Cash Prediction, Saving Spaces, Spending tool",
+   "Budget calculator (web)",
+   "ANZ App FAQ; NAB app page; Westpac NZ help index"
+  ],
+  [
+   "Insight & budgeting",
+   "Clearer merchant info on transactions",
+   "Yes (Look Who's Charging; original description one tap away)",
+   "Yes (retailer name, phone, map)",
+   "-",
+   "ANZ App FAQ; NAB app page"
+  ],
+  [
+   "Insight & budgeting",
+   "Search / filter transactions",
+   "-",
+   "Payment register filter (business)",
+   "Yes",
+   "Westpac NZ help index; NAB Connect guide"
+  ],
+  [
+   "Statements",
+   "Statements in app",
+   "Yes (by account, by year)",
+   "Yes (up to two years)",
+   "Yes (and stop paper statements)",
+   "ANZ App FAQ; NAB app page; Westpac NZ help index"
+  ],
+  [
+   "Statements",
+   "Share proof of account",
+   "-",
+   "-",
+   "Yes",
+   "Westpac NZ help index"
+  ],
+  [
+   "Support",
+   "Secure in-app messaging",
+   "Yes (Message Us)",
+   "-",
+   "-",
+   "ANZ App FAQ; ANZ Easy Read p18"
+  ],
+  [
+   "Support",
+   "Call the bank from the app",
+   "Yes",
+   "Yes (personal and business)",
+   "-",
+   "ANZ Easy Read p18; NAB app page"
+  ],
+  [
+   "Support",
+   "Book appointment in app",
+   "Yes (Home Loan/Personal/Business specialists)",
+   "- (web booking forms)",
+   "-",
+   "ANZ App FAQ; NAB menu"
+  ],
+  [
+   "Support",
+   "In-app dispute a transaction",
+   "Yes ('Something not right?')",
+   "Online dispute guide",
+   "Yes (Mastercard dispute guide)",
+   "ANZ App FAQ; NAB app page; Westpac NZ help index"
+  ],
+  [
+   "Notifications",
+   "Real-time payment push notifications",
+   "Business accounts: ended 16 Sep 2026 (personal not stated)",
+   "-",
+   "Manage notifications guides",
+   "ANZ App FAQ; Westpac NZ help index"
+  ],
+  [
+   "Notifications",
+   "Give feedback on a notification",
+   "-",
+   "-",
+   "Yes",
+   "Westpac NZ help index"
+  ],
+  [
+   "Loans",
+   "View home loan details in app",
+   "Yes (rate, balance, repayment, redraw)",
+   "-",
+   "Change repayments; fix/refix home loan",
+   "ANZ App FAQ; Westpac NZ help index"
+  ],
+  [
+   "Travel",
+   "Travel plans / overseas use in app",
+   "Yes (tell ANZ travel plans; works overseas)",
+   "$0 transfer fee in foreign currency",
+   "Yes (notify travel; set up overseas)",
+   "ANZ Easy Read p19; NAB app page; Westpac NZ help index"
+  ],
+  [
+   "Accessibility",
+   "Accessibility resources",
+   "Easy Read app guide",
+   "Mobile app accessibility page",
+   "Bigger text guide",
+   "ANZ Easy Read PDF; NAB menu; Westpac NZ help index"
+  ],
+  [
+   "Personalisation",
+   "Account image / reorder accounts / quick accounts",
+   "-",
+   "-",
+   "Yes",
+   "Westpac NZ help index"
+  ],
+  [
+   "Onboarding",
+   "Open a new account in the app",
+   "Yes (existing customers, Australian address)",
+   "Online opening (web)",
+   "-",
+   "ANZ App FAQ; NAB menu"
+  ],
+  [
+   "Third-party access",
+   "See and remove third-party access",
+   "-",
+   "-",
+   "Yes",
+   "Westpac NZ help index"
+  ],
+  [
+   "Updates",
+   "Guidance for updating app / unsupported phones",
+   "Yes (iOS 15 / Android 8 floor; Internet Banking fallback)",
+   "Minimum platform stated; update guide",
+   "Yes (why update; auto-update; unsupported phone)",
+   "ANZ App FAQ; NAB app page; Westpac NZ help index"
+  ]
+ ],
+ "notes": [
+  "'-' means the guides reviewed did not mention the feature; it does not prove the feature is absent.",
+  "Westpac columns come from Westpac New Zealand help pages (feature names only), not Westpac Australia.",
+  "The NAB Connect Quick Reference Guide is dated September 2018, so details may have changed.",
+  "The NAB Connect mobile app help video page had no readable transcript; only its description (mobile token set-up and app use) was used.",
+  "Pages and PDFs were read on 24 November 2026."
+ ]
+}

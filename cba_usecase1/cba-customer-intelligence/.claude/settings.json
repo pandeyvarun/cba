@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(make demo)", "Bash(make test)", "Bash(make eval)", "Bash(make link-skills)",
+      "Bash(python -m ci:*)", "Bash(ci:*)", "Bash(python -m pytest:*)", "Bash(git diff:*)", "Bash(git status)"
+    ],
+    "deny": [
+      "Read(./.env)", "Read(./.env.*)", "Bash(curl:*)", "Bash(rm -rf:*)",
+      "Bash(python -m ci recommend --push:*)", "Bash(ci recommend --push:*)"
+    ]
+  }
+}

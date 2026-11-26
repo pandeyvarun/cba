@@ -1,0 +1,7 @@
+---
+description: Where the stage specifications live and how to follow them
+globs: skills/**/SKILL.md
+alwaysApply: false
+---
+Each `skills/<name>/SKILL.md` is the spec for one stage (purpose, inputs, outputs, procedure, quality gates, prompts, failure modes, extending).
+When asked to work on a stage, open its SKILL.md first and follow its procedure and gates. Keep SKILL.md in sync with code changes.
