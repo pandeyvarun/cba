@@ -1,0 +1,140 @@
+{
+  "at": "2026-11-24T10:12:56.152Z",
+  "checks": [
+    {
+      "name": "Address bar has no filter suffix",
+      "pass": true
+    },
+    {
+      "name": "Three featured excerpts",
+      "pass": true
+    },
+    {
+      "name": "Partial source selection and its counts survive reload with clean URL",
+      "pass": true
+    },
+    {
+      "name": "Eight real YAML issues plus All",
+      "pass": true
+    },
+    {
+      "name": "YAML competitors unavailable, not zero",
+      "pass": true
+    },
+    {
+      "name": "YAML statements is a working classified filter",
+      "pass": true
+    },
+    {
+      "name": "Filter state survives reload with clean URL",
+      "pass": true
+    },
+    {
+      "name": "Switching lens resets issue and topic",
+      "pass": true
+    },
+    {
+      "name": "Fixed sample dialog has distinct filter scope and NZ caveat",
+      "pass": true
+    },
+    {
+      "name": "Namespaced citation lookup opens",
+      "pass": true
+    },
+    {
+      "name": "Full dialog pages 20 to 40 without duplicate evidence",
+      "pass": true
+    },
+    {
+      "name": "Bank evidence link contains only requested bank",
+      "pass": true
+    },
+    {
+      "name": "Desktop calendar retains two months",
+      "pass": true
+    },
+    {
+      "name": "Topic collapse persists",
+      "pass": true
+    },
+    {
+      "name": "Generate and Ask settle independently",
+      "pass": true
+    },
+    {
+      "name": "Typed assistant draft survives unrelated renders",
+      "pass": true
+    },
+    {
+      "name": "Local draft creation retained",
+      "pass": true
+    },
+    {
+      "name": "Local draft delete and undo retained",
+      "pass": true
+    },
+    {
+      "name": "Model error displays Retry without substitute content",
+      "pass": true
+    },
+    {
+      "name": "Legacy links migrate once into clean address",
+      "pass": true
+    },
+    {
+      "name": "In-tab legacy link without Sources selects current sources",
+      "pass": true
+    },
+    {
+      "name": "No frontend JavaScript errors",
+      "pass": true
+    },
+    {
+      "name": "Live layout 1920 fits, fonts load and three cards remain",
+      "pass": true
+    },
+    {
+      "name": "Live layout 1440 fits, fonts load and three cards remain",
+      "pass": true
+    },
+    {
+      "name": "Live layout 390 fits, fonts load and three cards remain",
+      "pass": true
+    },
+    {
+      "name": "Mobile comparison retains visible column headers",
+      "pass": true
+    }
+  ],
+  "passed": 26,
+  "failed": 0,
+  "layouts": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "cards": 3,
+      "comparisonY": 782.6484375,
+      "fontLoaded": true
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "overflow": false,
+      "cards": 3,
+      "comparisonY": 774.3515625,
+      "fontLoaded": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "cards": 3,
+      "comparisonY": 1780.5703125,
+      "fontLoaded": true
+    }
+  ],
+  "jsErrors": [],
+  "liveModelCalls": 0,
+  "scope": "Synthetic interaction/model-state tests plus DuckDB read-only layout; screenshots contain bounded redacted excerpts only."
+}

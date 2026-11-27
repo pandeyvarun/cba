@@ -1,0 +1,10 @@
+import {createHash} from 'node:crypto';
+export const PRODUCTS={yaml:'landing.commbank_user_comments_categorized',product:'landing.comments_classified',business:'landing.intel_business_only'};
+export const BANKS=['CommBank','ANZ','NAB','Westpac'];
+export const PROFILES=['business','personal','general'];
+export const AREAS=['Statements','Transaction','Non Functional','Onboarding','Other (not classifiable)'];
+export const SENTIMENTS=['Negative','Mixed','Neutral','Positive'];
+export const ALIASES=['CommBank YAML labels','CommBank product labels','Business competitor evidence and analysis'];
+export const topicId=(primary,secondary)=>'topic-'+createHash('sha256').update(JSON.stringify(['product',primary,secondary])).digest('hex').slice(0,20);
+export const RECORD_ID=/^(?:cba-[a-f0-9]{32}|bi-[a-f0-9]{32}-[1-9][0-9]{0,5})$/;
+export const coverage=(lens,profile,bank)=>bank==='CommBank'||(lens==='product'&&profile==='business')?'classified':'not_classified';

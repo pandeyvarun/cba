@@ -1,0 +1,78 @@
+{
+  "at": "2026-11-24T10:29:00.348Z",
+  "scope": "Synthetic unit/HTTP contract and security checks; no remote data/model calls",
+  "sourceHashes": {
+    "server.mjs": "3531930464c88da8c05463efac90bc955b262e684a8c33945307b4d2b6bc8d1e",
+    "server/classified.mjs": "ea511660baa865c785f3bc7198498de1e2e3ffdd3628bb75d44281286d031582",
+    "server/data.mjs": "3ed56c6a96e718b3163de9ef3ae0703e2483ad608650c03976ca6910a7f4713f",
+    "server/sql.mjs": "ac98113a9d201e3db0605b129abeb12afe9da9870e28c59500331f6fc7bd21bf",
+    "server/model.mjs": "2cf431786f37f9eb14406789a7213712fd743f2baff487b58828c4faedf29018",
+    "server/mock.mjs": "a7866a89dc3c14e8ba3db006fa8b5d3c6cb449c02231cd6bc34fbb45d501ae35",
+    "public/app.js": "7d19055659634c14b3f9afbb5b1cf334299c64c4f7890a459adad23671600006",
+    "public/domain.js": "4fd7539520d9d5dc9e60b9df03f58156d680de1f21a75c014609f518ef9c9322"
+  },
+  "results": [
+    {
+      "name": "Both lenses reconcile CBA cohorts; product Business includes only explicit competitor evidence",
+      "pass": true
+    },
+    {
+      "name": "YAML labels cannot affect Product filters/rows/metrics",
+      "pass": true
+    },
+    {
+      "name": "Product profile/primary cannot affect YAML filters/rows/metrics",
+      "pass": true
+    },
+    {
+      "name": "Unavailable competitor labels are null in YAML and Product non-Business, never zero",
+      "pass": true
+    },
+    {
+      "name": "Topic filters use observed IDs, remain disjoint and preserve all-topic counts",
+      "pass": true
+    },
+    {
+      "name": "Unknown lens/profile/issue/topic/date/source rejected and SQL values parameterized",
+      "pass": true
+    },
+    {
+      "name": "Stable namespaced evidence IDs, keyset pagination and citations resolve on both lenses",
+      "pass": true
+    },
+    {
+      "name": "Unknown sentiment remains Unknown; redacted excerpts bounded and exclude private fields",
+      "pass": true
+    },
+    {
+      "name": "Strict model citation membership and no invented priority",
+      "pass": true
+    },
+    {
+      "name": "Bounded user-isolated cache deduplicates inflight requests",
+      "pass": true
+    },
+    {
+      "name": "Legacy URLs migrate explicitly and new lens/topic URLs round trip",
+      "pass": true
+    },
+    {
+      "name": "Benchmark is separate fixed sample, invalid fractions remain unavailable, no missing-topic substitute",
+      "pass": true
+    },
+    {
+      "name": "HTTP both lenses and issues are live; unavailable coverage, empty filters, bank evidence and namespaced lookup",
+      "pass": true
+    },
+    {
+      "name": "HTTP fixed benchmark rejects filter parameters; static data/server files stay private; POST origin/body guards",
+      "pass": true
+    },
+    {
+      "name": "Viewer data auth and separate model token isolate users",
+      "pass": true
+    }
+  ],
+  "passed": 15,
+  "failed": 0
+}

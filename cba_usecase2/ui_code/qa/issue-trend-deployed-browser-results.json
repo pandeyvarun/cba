@@ -1,0 +1,35 @@
+{
+  "at": "2026-11-24T10:55:12.876Z",
+  "method": "Authenticated client review tab via in-app browser",
+  "appUrl": "https://commbank-customer-insights-7405609252709772.12.azure.databricksapps.com",
+  "selectedView": {
+    "lens": "Issue categories",
+    "profile": "business",
+    "issue": "feature enhancement",
+    "records": 34
+  },
+  "observations": {
+    "labelRenamed": true,
+    "contextLabelRenamed": true,
+    "savedFiltersRetained": true,
+    "visiblePointCounts": [
+      "6",
+      "5",
+      "3",
+      "7",
+      "1",
+      "2",
+      "4",
+      "1",
+      "3",
+      "2"
+    ],
+    "numericTotal": 34,
+    "focusOverlay": "Dec 2025 / 6 records",
+    "fullDataSnapshotUnchanged": true,
+    "cleanUrl": true
+  },
+  "deploymentId": "01f1e7f524b412c2b105f8ce9d99056e",
+  "sourceManifestHash": "76a4353fea48c37e9c827c4c3e4070bbaa19d333480e73d6c9c5f7f9d82a1f4a",
+  "passed": true
+}

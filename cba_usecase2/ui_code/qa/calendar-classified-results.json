@@ -1,0 +1,1299 @@
+{
+  "startedAt": "2026-11-24T09:44:04.669Z",
+  "finishedAt": "2026-11-24T09:44:04.673Z",
+  "scope": "Current live metadata bounds and current mock bounds plus independent leap/month-end/short-corpus expectations; no historical fixture",
+  "sourceHashes": {
+    "public/domain.js": "4fd7539520d9d5dc9e60b9df03f58156d680de1f21a75c014609f518ef9c9322",
+    "public/calendar.js": "6d76d3cf595ed3e3133010e8f82e37225ad4e94e71269e0cbd59d0e1a7b979db",
+    "server/mock.mjs": "a7866a89dc3c14e8ba3db006fa8b5d3c6cb449c02231cd6bc34fbb45d501ae35",
+    "qa/calendar-classified.mjs": "10e04f2d9f9f75f4d9cbd388d8afb3f42e90845953af9047823105e3cdc77477",
+    "qa/classified-live-results.json": "556bf8693d72d11741ba6f011f2703c762229d617bc2bab4856c12ba8d6af613"
+  },
+  "presetCombinations": 60,
+  "checks": [
+    {
+      "name": "all 60 independently expected live/mock/edge preset combinations",
+      "passed": true
+    },
+    {
+      "name": "profile and issue axes retain independent hash values",
+      "passed": true
+    },
+    {
+      "name": "legacy category links reset explicitly to All classified topics",
+      "passed": true
+    },
+    {
+      "name": "invalid and reversed dates reset safely",
+      "passed": true
+    },
+    {
+      "name": "strict dates and leap-day parsing",
+      "passed": true
+    }
+  ],
+  "combinations": [
+    {
+      "scenario": "verified classified corpus",
+      "bounds": {
+        "min": "2025-01-01",
+        "max": "2026-11-21"
+      },
+      "range": "all",
+      "lens": "product",
+      "profile": "business",
+      "issue": "all",
+      "topic": "all",
+      "expected": {
+        "from": "2025-01-01",
+        "to": "2026-11-21"
+      },
+      "actual": {
+        "from": "2025-01-01",
+        "to": "2026-11-21"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "verified classified corpus",
+      "bounds": {
+        "min": "2025-01-01",
+        "max": "2026-11-21"
+      },
+      "range": "all",
+      "lens": "product",
+      "profile": "personal",
+      "issue": "Statements",
+      "topic": "all",
+      "expected": {
+        "from": "2025-01-01",
+        "to": "2026-11-21"
+      },
+      "actual": {
+        "from": "2025-01-01",
+        "to": "2026-11-21"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "verified classified corpus",
+      "bounds": {
+        "min": "2025-01-01",
+        "max": "2026-11-21"
+      },
+      "range": "all",
+      "lens": "yaml",
+      "profile": "business",
+      "issue": "statements",
+      "topic": "all",
+      "expected": {
+        "from": "2025-01-01",
+        "to": "2026-11-21"
+      },
+      "actual": {
+        "from": "2025-01-01",
+        "to": "2026-11-21"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "verified classified corpus",
+      "bounds": {
+        "min": "2025-01-01",
+        "max": "2026-11-21"
+      },
+      "range": "all",
+      "lens": "yaml",
+      "profile": "general",
+      "issue": "security",
+      "topic": "all",
+      "expected": {
+        "from": "2025-01-01",
+        "to": "2026-11-21"
+      },
+      "actual": {
+        "from": "2025-01-01",
+        "to": "2026-11-21"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "verified classified corpus",
+      "bounds": {
+        "min": "2025-01-01",
+        "max": "2026-11-21"
+      },
+      "range": "3m",
+      "lens": "product",
+      "profile": "business",
+      "issue": "all",
+      "topic": "all",
+      "expected": {
+        "from": "2026-08-22",
+        "to": "2026-11-21"
+      },
+      "actual": {
+        "from": "2026-08-22",
+        "to": "2026-11-21"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "verified classified corpus",
+      "bounds": {
+        "min": "2025-01-01",
+        "max": "2026-11-21"
+      },
+      "range": "3m",
+      "lens": "product",
+      "profile": "personal",
+      "issue": "Statements",
+      "topic": "all",
+      "expected": {
+        "from": "2026-08-22",
+        "to": "2026-11-21"
+      },
+      "actual": {
+        "from": "2026-08-22",
+        "to": "2026-11-21"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "verified classified corpus",
+      "bounds": {
+        "min": "2025-01-01",
+        "max": "2026-11-21"
+      },
+      "range": "3m",
+      "lens": "yaml",
+      "profile": "business",
+      "issue": "statements",
+      "topic": "all",
+      "expected": {
+        "from": "2026-08-22",
+        "to": "2026-11-21"
+      },
+      "actual": {
+        "from": "2026-08-22",
+        "to": "2026-11-21"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "verified classified corpus",
+      "bounds": {
+        "min": "2025-01-01",
+        "max": "2026-11-21"
+      },
+      "range": "3m",
+      "lens": "yaml",
+      "profile": "general",
+      "issue": "security",
+      "topic": "all",
+      "expected": {
+        "from": "2026-08-22",
+        "to": "2026-11-21"
+      },
+      "actual": {
+        "from": "2026-08-22",
+        "to": "2026-11-21"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "verified classified corpus",
+      "bounds": {
+        "min": "2025-01-01",
+        "max": "2026-11-21"
+      },
+      "range": "12m",
+      "lens": "product",
+      "profile": "business",
+      "issue": "all",
+      "topic": "all",
+      "expected": {
+        "from": "2025-11-22",
+        "to": "2026-11-21"
+      },
+      "actual": {
+        "from": "2025-11-22",
+        "to": "2026-11-21"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "verified classified corpus",
+      "bounds": {
+        "min": "2025-01-01",
+        "max": "2026-11-21"
+      },
+      "range": "12m",
+      "lens": "product",
+      "profile": "personal",
+      "issue": "Statements",
+      "topic": "all",
+      "expected": {
+        "from": "2025-11-22",
+        "to": "2026-11-21"
+      },
+      "actual": {
+        "from": "2025-11-22",
+        "to": "2026-11-21"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "verified classified corpus",
+      "bounds": {
+        "min": "2025-01-01",
+        "max": "2026-11-21"
+      },
+      "range": "12m",
+      "lens": "yaml",
+      "profile": "business",
+      "issue": "statements",
+      "topic": "all",
+      "expected": {
+        "from": "2025-11-22",
+        "to": "2026-11-21"
+      },
+      "actual": {
+        "from": "2025-11-22",
+        "to": "2026-11-21"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "verified classified corpus",
+      "bounds": {
+        "min": "2025-01-01",
+        "max": "2026-11-21"
+      },
+      "range": "12m",
+      "lens": "yaml",
+      "profile": "general",
+      "issue": "security",
+      "topic": "all",
+      "expected": {
+        "from": "2025-11-22",
+        "to": "2026-11-21"
+      },
+      "actual": {
+        "from": "2025-11-22",
+        "to": "2026-11-21"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "current synthetic API",
+      "bounds": {
+        "min": "2025-01-01",
+        "max": "2026-11-21"
+      },
+      "range": "all",
+      "lens": "product",
+      "profile": "business",
+      "issue": "all",
+      "topic": "all",
+      "expected": {
+        "from": "2025-01-01",
+        "to": "2026-11-21"
+      },
+      "actual": {
+        "from": "2025-01-01",
+        "to": "2026-11-21"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "current synthetic API",
+      "bounds": {
+        "min": "2025-01-01",
+        "max": "2026-11-21"
+      },
+      "range": "all",
+      "lens": "product",
+      "profile": "personal",
+      "issue": "Statements",
+      "topic": "all",
+      "expected": {
+        "from": "2025-01-01",
+        "to": "2026-11-21"
+      },
+      "actual": {
+        "from": "2025-01-01",
+        "to": "2026-11-21"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "current synthetic API",
+      "bounds": {
+        "min": "2025-01-01",
+        "max": "2026-11-21"
+      },
+      "range": "all",
+      "lens": "yaml",
+      "profile": "business",
+      "issue": "statements",
+      "topic": "all",
+      "expected": {
+        "from": "2025-01-01",
+        "to": "2026-11-21"
+      },
+      "actual": {
+        "from": "2025-01-01",
+        "to": "2026-11-21"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "current synthetic API",
+      "bounds": {
+        "min": "2025-01-01",
+        "max": "2026-11-21"
+      },
+      "range": "all",
+      "lens": "yaml",
+      "profile": "general",
+      "issue": "security",
+      "topic": "all",
+      "expected": {
+        "from": "2025-01-01",
+        "to": "2026-11-21"
+      },
+      "actual": {
+        "from": "2025-01-01",
+        "to": "2026-11-21"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "current synthetic API",
+      "bounds": {
+        "min": "2025-01-01",
+        "max": "2026-11-21"
+      },
+      "range": "3m",
+      "lens": "product",
+      "profile": "business",
+      "issue": "all",
+      "topic": "all",
+      "expected": {
+        "from": "2026-08-22",
+        "to": "2026-11-21"
+      },
+      "actual": {
+        "from": "2026-08-22",
+        "to": "2026-11-21"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "current synthetic API",
+      "bounds": {
+        "min": "2025-01-01",
+        "max": "2026-11-21"
+      },
+      "range": "3m",
+      "lens": "product",
+      "profile": "personal",
+      "issue": "Statements",
+      "topic": "all",
+      "expected": {
+        "from": "2026-08-22",
+        "to": "2026-11-21"
+      },
+      "actual": {
+        "from": "2026-08-22",
+        "to": "2026-11-21"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "current synthetic API",
+      "bounds": {
+        "min": "2025-01-01",
+        "max": "2026-11-21"
+      },
+      "range": "3m",
+      "lens": "yaml",
+      "profile": "business",
+      "issue": "statements",
+      "topic": "all",
+      "expected": {
+        "from": "2026-08-22",
+        "to": "2026-11-21"
+      },
+      "actual": {
+        "from": "2026-08-22",
+        "to": "2026-11-21"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "current synthetic API",
+      "bounds": {
+        "min": "2025-01-01",
+        "max": "2026-11-21"
+      },
+      "range": "3m",
+      "lens": "yaml",
+      "profile": "general",
+      "issue": "security",
+      "topic": "all",
+      "expected": {
+        "from": "2026-08-22",
+        "to": "2026-11-21"
+      },
+      "actual": {
+        "from": "2026-08-22",
+        "to": "2026-11-21"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "current synthetic API",
+      "bounds": {
+        "min": "2025-01-01",
+        "max": "2026-11-21"
+      },
+      "range": "12m",
+      "lens": "product",
+      "profile": "business",
+      "issue": "all",
+      "topic": "all",
+      "expected": {
+        "from": "2025-11-22",
+        "to": "2026-11-21"
+      },
+      "actual": {
+        "from": "2025-11-22",
+        "to": "2026-11-21"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "current synthetic API",
+      "bounds": {
+        "min": "2025-01-01",
+        "max": "2026-11-21"
+      },
+      "range": "12m",
+      "lens": "product",
+      "profile": "personal",
+      "issue": "Statements",
+      "topic": "all",
+      "expected": {
+        "from": "2025-11-22",
+        "to": "2026-11-21"
+      },
+      "actual": {
+        "from": "2025-11-22",
+        "to": "2026-11-21"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "current synthetic API",
+      "bounds": {
+        "min": "2025-01-01",
+        "max": "2026-11-21"
+      },
+      "range": "12m",
+      "lens": "yaml",
+      "profile": "business",
+      "issue": "statements",
+      "topic": "all",
+      "expected": {
+        "from": "2025-11-22",
+        "to": "2026-11-21"
+      },
+      "actual": {
+        "from": "2025-11-22",
+        "to": "2026-11-21"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "current synthetic API",
+      "bounds": {
+        "min": "2025-01-01",
+        "max": "2026-11-21"
+      },
+      "range": "12m",
+      "lens": "yaml",
+      "profile": "general",
+      "issue": "security",
+      "topic": "all",
+      "expected": {
+        "from": "2025-11-22",
+        "to": "2026-11-21"
+      },
+      "actual": {
+        "from": "2025-11-22",
+        "to": "2026-11-21"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "leap-day maximum",
+      "bounds": {
+        "min": "2023-01-01",
+        "max": "2024-02-29"
+      },
+      "range": "all",
+      "lens": "product",
+      "profile": "business",
+      "issue": "all",
+      "topic": "all",
+      "expected": {
+        "from": "2023-01-01",
+        "to": "2024-02-29"
+      },
+      "actual": {
+        "from": "2023-01-01",
+        "to": "2024-02-29"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "leap-day maximum",
+      "bounds": {
+        "min": "2023-01-01",
+        "max": "2024-02-29"
+      },
+      "range": "all",
+      "lens": "product",
+      "profile": "personal",
+      "issue": "Statements",
+      "topic": "all",
+      "expected": {
+        "from": "2023-01-01",
+        "to": "2024-02-29"
+      },
+      "actual": {
+        "from": "2023-01-01",
+        "to": "2024-02-29"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "leap-day maximum",
+      "bounds": {
+        "min": "2023-01-01",
+        "max": "2024-02-29"
+      },
+      "range": "all",
+      "lens": "yaml",
+      "profile": "business",
+      "issue": "statements",
+      "topic": "all",
+      "expected": {
+        "from": "2023-01-01",
+        "to": "2024-02-29"
+      },
+      "actual": {
+        "from": "2023-01-01",
+        "to": "2024-02-29"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "leap-day maximum",
+      "bounds": {
+        "min": "2023-01-01",
+        "max": "2024-02-29"
+      },
+      "range": "all",
+      "lens": "yaml",
+      "profile": "general",
+      "issue": "security",
+      "topic": "all",
+      "expected": {
+        "from": "2023-01-01",
+        "to": "2024-02-29"
+      },
+      "actual": {
+        "from": "2023-01-01",
+        "to": "2024-02-29"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "leap-day maximum",
+      "bounds": {
+        "min": "2023-01-01",
+        "max": "2024-02-29"
+      },
+      "range": "3m",
+      "lens": "product",
+      "profile": "business",
+      "issue": "all",
+      "topic": "all",
+      "expected": {
+        "from": "2023-11-30",
+        "to": "2024-02-29"
+      },
+      "actual": {
+        "from": "2023-11-30",
+        "to": "2024-02-29"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "leap-day maximum",
+      "bounds": {
+        "min": "2023-01-01",
+        "max": "2024-02-29"
+      },
+      "range": "3m",
+      "lens": "product",
+      "profile": "personal",
+      "issue": "Statements",
+      "topic": "all",
+      "expected": {
+        "from": "2023-11-30",
+        "to": "2024-02-29"
+      },
+      "actual": {
+        "from": "2023-11-30",
+        "to": "2024-02-29"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "leap-day maximum",
+      "bounds": {
+        "min": "2023-01-01",
+        "max": "2024-02-29"
+      },
+      "range": "3m",
+      "lens": "yaml",
+      "profile": "business",
+      "issue": "statements",
+      "topic": "all",
+      "expected": {
+        "from": "2023-11-30",
+        "to": "2024-02-29"
+      },
+      "actual": {
+        "from": "2023-11-30",
+        "to": "2024-02-29"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "leap-day maximum",
+      "bounds": {
+        "min": "2023-01-01",
+        "max": "2024-02-29"
+      },
+      "range": "3m",
+      "lens": "yaml",
+      "profile": "general",
+      "issue": "security",
+      "topic": "all",
+      "expected": {
+        "from": "2023-11-30",
+        "to": "2024-02-29"
+      },
+      "actual": {
+        "from": "2023-11-30",
+        "to": "2024-02-29"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "leap-day maximum",
+      "bounds": {
+        "min": "2023-01-01",
+        "max": "2024-02-29"
+      },
+      "range": "12m",
+      "lens": "product",
+      "profile": "business",
+      "issue": "all",
+      "topic": "all",
+      "expected": {
+        "from": "2023-03-01",
+        "to": "2024-02-29"
+      },
+      "actual": {
+        "from": "2023-03-01",
+        "to": "2024-02-29"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "leap-day maximum",
+      "bounds": {
+        "min": "2023-01-01",
+        "max": "2024-02-29"
+      },
+      "range": "12m",
+      "lens": "product",
+      "profile": "personal",
+      "issue": "Statements",
+      "topic": "all",
+      "expected": {
+        "from": "2023-03-01",
+        "to": "2024-02-29"
+      },
+      "actual": {
+        "from": "2023-03-01",
+        "to": "2024-02-29"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "leap-day maximum",
+      "bounds": {
+        "min": "2023-01-01",
+        "max": "2024-02-29"
+      },
+      "range": "12m",
+      "lens": "yaml",
+      "profile": "business",
+      "issue": "statements",
+      "topic": "all",
+      "expected": {
+        "from": "2023-03-01",
+        "to": "2024-02-29"
+      },
+      "actual": {
+        "from": "2023-03-01",
+        "to": "2024-02-29"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "leap-day maximum",
+      "bounds": {
+        "min": "2023-01-01",
+        "max": "2024-02-29"
+      },
+      "range": "12m",
+      "lens": "yaml",
+      "profile": "general",
+      "issue": "security",
+      "topic": "all",
+      "expected": {
+        "from": "2023-03-01",
+        "to": "2024-02-29"
+      },
+      "actual": {
+        "from": "2023-03-01",
+        "to": "2024-02-29"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "month-end clamping",
+      "bounds": {
+        "min": "2024-01-01",
+        "max": "2024-05-31"
+      },
+      "range": "all",
+      "lens": "product",
+      "profile": "business",
+      "issue": "all",
+      "topic": "all",
+      "expected": {
+        "from": "2024-01-01",
+        "to": "2024-05-31"
+      },
+      "actual": {
+        "from": "2024-01-01",
+        "to": "2024-05-31"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "month-end clamping",
+      "bounds": {
+        "min": "2024-01-01",
+        "max": "2024-05-31"
+      },
+      "range": "all",
+      "lens": "product",
+      "profile": "personal",
+      "issue": "Statements",
+      "topic": "all",
+      "expected": {
+        "from": "2024-01-01",
+        "to": "2024-05-31"
+      },
+      "actual": {
+        "from": "2024-01-01",
+        "to": "2024-05-31"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "month-end clamping",
+      "bounds": {
+        "min": "2024-01-01",
+        "max": "2024-05-31"
+      },
+      "range": "all",
+      "lens": "yaml",
+      "profile": "business",
+      "issue": "statements",
+      "topic": "all",
+      "expected": {
+        "from": "2024-01-01",
+        "to": "2024-05-31"
+      },
+      "actual": {
+        "from": "2024-01-01",
+        "to": "2024-05-31"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "month-end clamping",
+      "bounds": {
+        "min": "2024-01-01",
+        "max": "2024-05-31"
+      },
+      "range": "all",
+      "lens": "yaml",
+      "profile": "general",
+      "issue": "security",
+      "topic": "all",
+      "expected": {
+        "from": "2024-01-01",
+        "to": "2024-05-31"
+      },
+      "actual": {
+        "from": "2024-01-01",
+        "to": "2024-05-31"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "month-end clamping",
+      "bounds": {
+        "min": "2024-01-01",
+        "max": "2024-05-31"
+      },
+      "range": "3m",
+      "lens": "product",
+      "profile": "business",
+      "issue": "all",
+      "topic": "all",
+      "expected": {
+        "from": "2024-03-01",
+        "to": "2024-05-31"
+      },
+      "actual": {
+        "from": "2024-03-01",
+        "to": "2024-05-31"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "month-end clamping",
+      "bounds": {
+        "min": "2024-01-01",
+        "max": "2024-05-31"
+      },
+      "range": "3m",
+      "lens": "product",
+      "profile": "personal",
+      "issue": "Statements",
+      "topic": "all",
+      "expected": {
+        "from": "2024-03-01",
+        "to": "2024-05-31"
+      },
+      "actual": {
+        "from": "2024-03-01",
+        "to": "2024-05-31"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "month-end clamping",
+      "bounds": {
+        "min": "2024-01-01",
+        "max": "2024-05-31"
+      },
+      "range": "3m",
+      "lens": "yaml",
+      "profile": "business",
+      "issue": "statements",
+      "topic": "all",
+      "expected": {
+        "from": "2024-03-01",
+        "to": "2024-05-31"
+      },
+      "actual": {
+        "from": "2024-03-01",
+        "to": "2024-05-31"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "month-end clamping",
+      "bounds": {
+        "min": "2024-01-01",
+        "max": "2024-05-31"
+      },
+      "range": "3m",
+      "lens": "yaml",
+      "profile": "general",
+      "issue": "security",
+      "topic": "all",
+      "expected": {
+        "from": "2024-03-01",
+        "to": "2024-05-31"
+      },
+      "actual": {
+        "from": "2024-03-01",
+        "to": "2024-05-31"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "month-end clamping",
+      "bounds": {
+        "min": "2024-01-01",
+        "max": "2024-05-31"
+      },
+      "range": "12m",
+      "lens": "product",
+      "profile": "business",
+      "issue": "all",
+      "topic": "all",
+      "expected": {
+        "from": "2024-01-01",
+        "to": "2024-05-31"
+      },
+      "actual": {
+        "from": "2024-01-01",
+        "to": "2024-05-31"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "month-end clamping",
+      "bounds": {
+        "min": "2024-01-01",
+        "max": "2024-05-31"
+      },
+      "range": "12m",
+      "lens": "product",
+      "profile": "personal",
+      "issue": "Statements",
+      "topic": "all",
+      "expected": {
+        "from": "2024-01-01",
+        "to": "2024-05-31"
+      },
+      "actual": {
+        "from": "2024-01-01",
+        "to": "2024-05-31"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "month-end clamping",
+      "bounds": {
+        "min": "2024-01-01",
+        "max": "2024-05-31"
+      },
+      "range": "12m",
+      "lens": "yaml",
+      "profile": "business",
+      "issue": "statements",
+      "topic": "all",
+      "expected": {
+        "from": "2024-01-01",
+        "to": "2024-05-31"
+      },
+      "actual": {
+        "from": "2024-01-01",
+        "to": "2024-05-31"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "month-end clamping",
+      "bounds": {
+        "min": "2024-01-01",
+        "max": "2024-05-31"
+      },
+      "range": "12m",
+      "lens": "yaml",
+      "profile": "general",
+      "issue": "security",
+      "topic": "all",
+      "expected": {
+        "from": "2024-01-01",
+        "to": "2024-05-31"
+      },
+      "actual": {
+        "from": "2024-01-01",
+        "to": "2024-05-31"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "short corpus floor",
+      "bounds": {
+        "min": "2026-11-01",
+        "max": "2026-11-21"
+      },
+      "range": "all",
+      "lens": "product",
+      "profile": "business",
+      "issue": "all",
+      "topic": "all",
+      "expected": {
+        "from": "2026-11-01",
+        "to": "2026-11-21"
+      },
+      "actual": {
+        "from": "2026-11-01",
+        "to": "2026-11-21"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "short corpus floor",
+      "bounds": {
+        "min": "2026-11-01",
+        "max": "2026-11-21"
+      },
+      "range": "all",
+      "lens": "product",
+      "profile": "personal",
+      "issue": "Statements",
+      "topic": "all",
+      "expected": {
+        "from": "2026-11-01",
+        "to": "2026-11-21"
+      },
+      "actual": {
+        "from": "2026-11-01",
+        "to": "2026-11-21"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "short corpus floor",
+      "bounds": {
+        "min": "2026-11-01",
+        "max": "2026-11-21"
+      },
+      "range": "all",
+      "lens": "yaml",
+      "profile": "business",
+      "issue": "statements",
+      "topic": "all",
+      "expected": {
+        "from": "2026-11-01",
+        "to": "2026-11-21"
+      },
+      "actual": {
+        "from": "2026-11-01",
+        "to": "2026-11-21"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "short corpus floor",
+      "bounds": {
+        "min": "2026-11-01",
+        "max": "2026-11-21"
+      },
+      "range": "all",
+      "lens": "yaml",
+      "profile": "general",
+      "issue": "security",
+      "topic": "all",
+      "expected": {
+        "from": "2026-11-01",
+        "to": "2026-11-21"
+      },
+      "actual": {
+        "from": "2026-11-01",
+        "to": "2026-11-21"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "short corpus floor",
+      "bounds": {
+        "min": "2026-11-01",
+        "max": "2026-11-21"
+      },
+      "range": "3m",
+      "lens": "product",
+      "profile": "business",
+      "issue": "all",
+      "topic": "all",
+      "expected": {
+        "from": "2026-11-01",
+        "to": "2026-11-21"
+      },
+      "actual": {
+        "from": "2026-11-01",
+        "to": "2026-11-21"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "short corpus floor",
+      "bounds": {
+        "min": "2026-11-01",
+        "max": "2026-11-21"
+      },
+      "range": "3m",
+      "lens": "product",
+      "profile": "personal",
+      "issue": "Statements",
+      "topic": "all",
+      "expected": {
+        "from": "2026-11-01",
+        "to": "2026-11-21"
+      },
+      "actual": {
+        "from": "2026-11-01",
+        "to": "2026-11-21"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "short corpus floor",
+      "bounds": {
+        "min": "2026-11-01",
+        "max": "2026-11-21"
+      },
+      "range": "3m",
+      "lens": "yaml",
+      "profile": "business",
+      "issue": "statements",
+      "topic": "all",
+      "expected": {
+        "from": "2026-11-01",
+        "to": "2026-11-21"
+      },
+      "actual": {
+        "from": "2026-11-01",
+        "to": "2026-11-21"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "short corpus floor",
+      "bounds": {
+        "min": "2026-11-01",
+        "max": "2026-11-21"
+      },
+      "range": "3m",
+      "lens": "yaml",
+      "profile": "general",
+      "issue": "security",
+      "topic": "all",
+      "expected": {
+        "from": "2026-11-01",
+        "to": "2026-11-21"
+      },
+      "actual": {
+        "from": "2026-11-01",
+        "to": "2026-11-21"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "short corpus floor",
+      "bounds": {
+        "min": "2026-11-01",
+        "max": "2026-11-21"
+      },
+      "range": "12m",
+      "lens": "product",
+      "profile": "business",
+      "issue": "all",
+      "topic": "all",
+      "expected": {
+        "from": "2026-11-01",
+        "to": "2026-11-21"
+      },
+      "actual": {
+        "from": "2026-11-01",
+        "to": "2026-11-21"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "short corpus floor",
+      "bounds": {
+        "min": "2026-11-01",
+        "max": "2026-11-21"
+      },
+      "range": "12m",
+      "lens": "product",
+      "profile": "personal",
+      "issue": "Statements",
+      "topic": "all",
+      "expected": {
+        "from": "2026-11-01",
+        "to": "2026-11-21"
+      },
+      "actual": {
+        "from": "2026-11-01",
+        "to": "2026-11-21"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "short corpus floor",
+      "bounds": {
+        "min": "2026-11-01",
+        "max": "2026-11-21"
+      },
+      "range": "12m",
+      "lens": "yaml",
+      "profile": "business",
+      "issue": "statements",
+      "topic": "all",
+      "expected": {
+        "from": "2026-11-01",
+        "to": "2026-11-21"
+      },
+      "actual": {
+        "from": "2026-11-01",
+        "to": "2026-11-21"
+      },
+      "passed": true
+    },
+    {
+      "scenario": "short corpus floor",
+      "bounds": {
+        "min": "2026-11-01",
+        "max": "2026-11-21"
+      },
+      "range": "12m",
+      "lens": "yaml",
+      "profile": "general",
+      "issue": "security",
+      "topic": "all",
+      "expected": {
+        "from": "2026-11-01",
+        "to": "2026-11-21"
+      },
+      "actual": {
+        "from": "2026-11-01",
+        "to": "2026-11-21"
+      },
+      "passed": true
+    }
+  ],
+  "passed": 5,
+  "failed": 0
+}

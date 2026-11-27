@@ -1,0 +1,12 @@
+{
+  "name": "commbank-customer-insights",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "check": "node --check server.mjs && node --check public/app.js && node --check public/domain.js && node --check public/calendar.js"
+  },
+  "dependencies": {
+    "@duckdb/node-api": "2.0.1-r.1"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "at": "2026-11-24T10:55:12.876Z",
+  "status": "complete",
+  "appUrl": "https://commbank-customer-insights-7405609252709772.12.azure.databricksapps.com",
+  "deploymentId": "01f1e7f524b412c2b105f8ce9d99056e",
+  "appState": "RUNNING",
+  "engine": "DuckDB",
+  "hosting": "Databricks Apps",
+  "model": "Existing Databricks user-authorized serving endpoint",
+  "dataSQLDependency": false,
+  "fullArchive": {
+    "tables": 10,
+    "rows": 68919,
+    "bytes": 36450304,
+    "sha256": "5ac0fd7bf0eb8495f3829c6fbd5359996d26f820edd08633375cfadafed7900a",
+    "allNativeValuesAndArchiveBytesVerified": true
+  },
+  "evidenceRows": 10555,
+  "permissions": {
+    "aclUnchanged": true,
+    "fingerprint": "8447e13383cdd0f3011b9a1b74aa1a69f0278cbdc468aead81a5b6ac83da1732",
+    "entries": 2404
+  },
+  "fable": {
+    "plan": "docs/fable-duckdb-plan.md",
+    "qualityGate": "docs/fable-duckdb-review.md",
+    "verdict": "APPROVE deployment step; all post-deploy conditions verified",
+    "rollbackReady": true
+  },
+  "qa": {
+    "lossless": "qa/duckdb-lossless-verification.json",
+    "runtime": {
+      "passed": 82,
+      "networkCalls": 0,
+      "pages": 1263,
+      "recordVisits": 62904
+    },
+    "contracts": 15,
+    "browser": 26,
+    "failClosed": 9,
+    "remoteDeployment": 8,
+    "realModelCalls": true,
+    "nativeHostedUI": true
+  },
+  "scope": "All ten landing application tables preserved completely; unrelated inference payload logs excluded. Original DBX tables and prior release left intact. Embedded snapshot is fixed until explicitly refreshed.",
+  "remainingLimit": "Separate non-owner model authorization not tested.",
+  "latestUpdate": {
+    "scope": "Issue categories label, numerical trend chart overlays and SA documentation",
+    "sourceManifestHash": "76a4353fea48c37e9c827c4c3e4070bbaa19d333480e73d6c9c5f7f9d82a1f4a",
+    "fableReview": "docs/fable-issue-trend-final.md",
+    "fableVerdict": "APPROVE",
+    "browserChecks": 26,
+    "remoteChecks": 8,
+    "nativeHostedCheck": "qa/issue-trend-deployed-browser-results.json",
+    "architecture": "ARCHITECTURE.md"
+  }
+}

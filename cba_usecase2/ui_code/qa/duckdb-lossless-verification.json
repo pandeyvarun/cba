@@ -1,0 +1,260 @@
+{
+  "at": "2026-11-24T10:12:13.985Z",
+  "checks": [],
+  "tables": [
+    {
+      "name": "anz_user_comments",
+      "rows": 11556,
+      "columns": 6,
+      "archiveSha256": "4af887a1fa1efc0f1a607613db65ff50ca4b24fa13b6669670e6288f5594f034",
+      "archiveBytesVerified": true,
+      "nativeValuesVerified": true,
+      "nullCountsVerified": true,
+      "duplicatesPreserved": 0
+    },
+    {
+      "name": "commbank_user_comments",
+      "rows": 20006,
+      "columns": 6,
+      "archiveSha256": "e18e02b8303e6f04f12dc4bd95740af49c66abd77c50313b95acc1093b35cc0a",
+      "archiveBytesVerified": true,
+      "nativeValuesVerified": true,
+      "nullCountsVerified": true,
+      "duplicatesPreserved": 0
+    },
+    {
+      "name": "commbank_user_comments_categorized",
+      "rows": 10413,
+      "columns": 8,
+      "archiveSha256": "b47e3048b956157b9bff8762b863ea7143c5e41eb833ed69204b59727c51cd32",
+      "archiveBytesVerified": true,
+      "nativeValuesVerified": true,
+      "nullCountsVerified": true,
+      "duplicatesPreserved": 0
+    },
+    {
+      "name": "comments_classified",
+      "rows": 10413,
+      "columns": 12,
+      "archiveSha256": "eaaf917940611d34a2207f59552631c99481d52802c03112245a7b10c3c05ae9",
+      "archiveBytesVerified": true,
+      "nativeValuesVerified": true,
+      "nullCountsVerified": true,
+      "duplicatesPreserved": 0
+    },
+    {
+      "name": "competitor_reference",
+      "rows": 29,
+      "columns": 17,
+      "archiveSha256": "bd362336a4146fb02002e3af046cfec1fa82f4ffedfbf86e6a47b7eb62a06590",
+      "archiveBytesVerified": true,
+      "nativeValuesVerified": true,
+      "nullCountsVerified": true,
+      "duplicatesPreserved": 0
+    },
+    {
+      "name": "intel_business_general",
+      "rows": 29,
+      "columns": 20,
+      "archiveSha256": "a79c3f3273cde5e6977638c48b07aa4bf611c77fe013a1cb88d5505ee5870e3f",
+      "archiveBytesVerified": true,
+      "nativeValuesVerified": true,
+      "nullCountsVerified": true,
+      "duplicatesPreserved": 0
+    },
+    {
+      "name": "intel_business_only",
+      "rows": 142,
+      "columns": 27,
+      "archiveSha256": "4e9c37f38e09ec0d2e79120e11dfa610a5c2412ed81c0503990aa9dd76d96332",
+      "archiveBytesVerified": true,
+      "nativeValuesVerified": true,
+      "nullCountsVerified": true,
+      "duplicatesPreserved": 0
+    },
+    {
+      "name": "mobile_app_feature_matrix",
+      "rows": 35,
+      "columns": 6,
+      "archiveSha256": "e387f20202c637d7ec074b484266221c7d4cfd741fa2fa91414bb4d0e7b21487",
+      "archiveBytesVerified": true,
+      "nativeValuesVerified": true,
+      "nullCountsVerified": true,
+      "duplicatesPreserved": 0
+    },
+    {
+      "name": "nab_user_comments",
+      "rows": 7482,
+      "columns": 6,
+      "archiveSha256": "803e4e8d4b850c3cc09fa71d3344c2d73c243ef48eed101f3cf282f4f70a2809",
+      "archiveBytesVerified": true,
+      "nativeValuesVerified": true,
+      "nullCountsVerified": true,
+      "duplicatesPreserved": 0
+    },
+    {
+      "name": "westpac_user_comments",
+      "rows": 8814,
+      "columns": 6,
+      "archiveSha256": "e7bddbd8408adaffb7bf79ee2fbc0bbc440df1b00413d246d906e949bdd72f92",
+      "archiveBytesVerified": true,
+      "nativeValuesVerified": true,
+      "nullCountsVerified": true,
+      "duplicatesPreserved": 0
+    },
+    {
+      "name": "app_evidence",
+      "rows": 10555,
+      "columns": 14,
+      "archiveSha256": "3547de85f0c2e3954180d7d1161f4c8c25f2453f11a15a737b2c9b10bfeaab12",
+      "archiveBytesVerified": true,
+      "nativeValuesVerified": true,
+      "nullCountsVerified": false,
+      "duplicatesPreserved": 0
+    }
+  ],
+  "snapshot": {
+    "format": 1,
+    "createdAt": "2026-11-24T10:11:53.450Z",
+    "sha256": "5ac0fd7bf0eb8495f3829c6fbd5359996d26f820edd08633375cfadafed7900a",
+    "bytes": 36450304,
+    "parts": [
+      {
+        "name": "snapshot-000.bin",
+        "bytes": 3145728,
+        "sha256": "6dda016ca497edba0dec72f4dce9db359a456e306b39602326c892fdd4787791"
+      },
+      {
+        "name": "snapshot-001.bin",
+        "bytes": 3145728,
+        "sha256": "23bc964eda422b4ec3458b01d787721e718c3db2b73d5dc9367daf78eb9ff1e3"
+      },
+      {
+        "name": "snapshot-002.bin",
+        "bytes": 3145728,
+        "sha256": "5688e406a78a6e99221a833ca4af2a24dfcca4dd5b89d31bd3c3afdcb3eb8e62"
+      },
+      {
+        "name": "snapshot-003.bin",
+        "bytes": 3145728,
+        "sha256": "fc5017b7035b33f6bda2524ab30a911ec913a357adf778bfd303cb8a7058a9f8"
+      },
+      {
+        "name": "snapshot-004.bin",
+        "bytes": 3145728,
+        "sha256": "bad245c61bb0830d9d280fa2ccd2ce768b87ef5d7f37672ac5f0ed39d9723079"
+      },
+      {
+        "name": "snapshot-005.bin",
+        "bytes": 3145728,
+        "sha256": "7f8e752bb3ae18953d77ae726381f7cca090fda330eda1542ca0d1285df13f8c"
+      },
+      {
+        "name": "snapshot-006.bin",
+        "bytes": 3145728,
+        "sha256": "3c4dcedeb8f4d6747f3f30e2c79ee9221753cbf2e12ff69339fc0863ca0a4117"
+      },
+      {
+        "name": "snapshot-007.bin",
+        "bytes": 3145728,
+        "sha256": "2b27b9502dd3efc56b4a62e5c8261efc72740a9c2de42bc30e89b99c22aae7f0"
+      },
+      {
+        "name": "snapshot-008.bin",
+        "bytes": 3145728,
+        "sha256": "4638afc00d74751a8b239acaba76169f6f02ba032c3b5e519bdeef5904c4de2b"
+      },
+      {
+        "name": "snapshot-009.bin",
+        "bytes": 3145728,
+        "sha256": "c374fc9b6936a0b59121ffb24f1b85b2137aa7e3df04287f4cd225e149e97127"
+      },
+      {
+        "name": "snapshot-010.bin",
+        "bytes": 3145728,
+        "sha256": "193196d6f6aa690e4a8f4f7daae638d50828de751d8b6f4c44759f51efc77388"
+      },
+      {
+        "name": "snapshot-011.bin",
+        "bytes": 1847296,
+        "sha256": "06de512656f9d1a08ccec8faecbf0366a664c2ea7c8a821cfc98ff8a361d1c8f"
+      }
+    ],
+    "totalRows": 68919,
+    "tableCount": 10,
+    "evidenceRows": 10555,
+    "tables": [
+      {
+        "name": "anz_user_comments",
+        "version": 0,
+        "rows": 11556,
+        "columns": 6,
+        "archiveSha256": "4af887a1fa1efc0f1a607613db65ff50ca4b24fa13b6669670e6288f5594f034"
+      },
+      {
+        "name": "commbank_user_comments",
+        "version": 0,
+        "rows": 20006,
+        "columns": 6,
+        "archiveSha256": "e18e02b8303e6f04f12dc4bd95740af49c66abd77c50313b95acc1093b35cc0a"
+      },
+      {
+        "name": "commbank_user_comments_categorized",
+        "version": 0,
+        "rows": 10413,
+        "columns": 8,
+        "archiveSha256": "b47e3048b956157b9bff8762b863ea7143c5e41eb833ed69204b59727c51cd32"
+      },
+      {
+        "name": "comments_classified",
+        "version": 1,
+        "rows": 10413,
+        "columns": 12,
+        "archiveSha256": "eaaf917940611d34a2207f59552631c99481d52802c03112245a7b10c3c05ae9"
+      },
+      {
+        "name": "competitor_reference",
+        "version": 1,
+        "rows": 29,
+        "columns": 17,
+        "archiveSha256": "bd362336a4146fb02002e3af046cfec1fa82f4ffedfbf86e6a47b7eb62a06590"
+      },
+      {
+        "name": "intel_business_general",
+        "version": 1,
+        "rows": 29,
+        "columns": 20,
+        "archiveSha256": "a79c3f3273cde5e6977638c48b07aa4bf611c77fe013a1cb88d5505ee5870e3f"
+      },
+      {
+        "name": "intel_business_only",
+        "version": 1,
+        "rows": 142,
+        "columns": 27,
+        "archiveSha256": "4e9c37f38e09ec0d2e79120e11dfa610a5c2412ed81c0503990aa9dd76d96332"
+      },
+      {
+        "name": "mobile_app_feature_matrix",
+        "version": 1,
+        "rows": 35,
+        "columns": 6,
+        "archiveSha256": "e387f20202c637d7ec074b484266221c7d4cfd741fa2fa91414bb4d0e7b21487"
+      },
+      {
+        "name": "nab_user_comments",
+        "version": 0,
+        "rows": 7482,
+        "columns": 6,
+        "archiveSha256": "803e4e8d4b850c3cc09fa71d3344c2d73c243ef48eed101f3cf282f4f70a2809"
+      },
+      {
+        "name": "westpac_user_comments",
+        "version": 0,
+        "rows": 8814,
+        "columns": 6,
+        "archiveSha256": "e7bddbd8408adaffb7bf79ee2fbc0bbc440df1b00413d246d906e949bdd72f92"
+      }
+    ]
+  },
+  "success": true
+}

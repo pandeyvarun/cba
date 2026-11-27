@@ -1,0 +1,192 @@
+{
+  "at": "2026-11-24T10:16:21.900Z",
+  "fileCount": 35,
+  "manifestHash": "b9f86770827504488811baadca97a57abf55b0ac8b1d9e9a9d7307919d0409cd",
+  "files": [
+    {
+      "path": "app.yaml",
+      "rootMatches": true,
+      "stageMatches": true
+    },
+    {
+      "path": "config/taxonomy-source.yaml",
+      "rootMatches": true,
+      "stageMatches": true
+    },
+    {
+      "path": "config/taxonomy.json",
+      "rootMatches": true,
+      "stageMatches": true
+    },
+    {
+      "path": "data/snapshot-000.bin",
+      "rootMatches": true,
+      "stageMatches": true
+    },
+    {
+      "path": "data/snapshot-001.bin",
+      "rootMatches": true,
+      "stageMatches": true
+    },
+    {
+      "path": "data/snapshot-002.bin",
+      "rootMatches": true,
+      "stageMatches": true
+    },
+    {
+      "path": "data/snapshot-003.bin",
+      "rootMatches": true,
+      "stageMatches": true
+    },
+    {
+      "path": "data/snapshot-004.bin",
+      "rootMatches": true,
+      "stageMatches": true
+    },
+    {
+      "path": "data/snapshot-005.bin",
+      "rootMatches": true,
+      "stageMatches": true
+    },
+    {
+      "path": "data/snapshot-006.bin",
+      "rootMatches": true,
+      "stageMatches": true
+    },
+    {
+      "path": "data/snapshot-007.bin",
+      "rootMatches": true,
+      "stageMatches": true
+    },
+    {
+      "path": "data/snapshot-008.bin",
+      "rootMatches": true,
+      "stageMatches": true
+    },
+    {
+      "path": "data/snapshot-009.bin",
+      "rootMatches": true,
+      "stageMatches": true
+    },
+    {
+      "path": "data/snapshot-010.bin",
+      "rootMatches": true,
+      "stageMatches": true
+    },
+    {
+      "path": "data/snapshot-011.bin",
+      "rootMatches": true,
+      "stageMatches": true
+    },
+    {
+      "path": "data/snapshot-manifest.json",
+      "rootMatches": true,
+      "stageMatches": true
+    },
+    {
+      "path": "package-lock.json",
+      "rootMatches": true,
+      "stageMatches": true
+    },
+    {
+      "path": "package.json",
+      "rootMatches": true,
+      "stageMatches": true
+    },
+    {
+      "path": "public/app.js",
+      "rootMatches": true,
+      "stageMatches": true
+    },
+    {
+      "path": "public/assets/beacon-bold.woff2",
+      "rootMatches": true,
+      "stageMatches": true
+    },
+    {
+      "path": "public/assets/beacon-regular.woff2",
+      "rootMatches": true,
+      "stageMatches": true
+    },
+    {
+      "path": "public/assets/commbank-logo.svg",
+      "rootMatches": true,
+      "stageMatches": true
+    },
+    {
+      "path": "public/calendar.js",
+      "rootMatches": true,
+      "stageMatches": true
+    },
+    {
+      "path": "public/domain.js",
+      "rootMatches": true,
+      "stageMatches": true
+    },
+    {
+      "path": "public/index.html",
+      "rootMatches": true,
+      "stageMatches": true
+    },
+    {
+      "path": "public/styles.css",
+      "rootMatches": true,
+      "stageMatches": true
+    },
+    {
+      "path": "public/tokens.css",
+      "rootMatches": true,
+      "stageMatches": true
+    },
+    {
+      "path": "server.mjs",
+      "rootMatches": true,
+      "stageMatches": true
+    },
+    {
+      "path": "server/auth.mjs",
+      "rootMatches": true,
+      "stageMatches": true
+    },
+    {
+      "path": "server/classified.mjs",
+      "rootMatches": true,
+      "stageMatches": true
+    },
+    {
+      "path": "server/data.mjs",
+      "rootMatches": true,
+      "stageMatches": true
+    },
+    {
+      "path": "server/duckdb.mjs",
+      "rootMatches": true,
+      "stageMatches": true
+    },
+    {
+      "path": "server/mock.mjs",
+      "rootMatches": true,
+      "stageMatches": true
+    },
+    {
+      "path": "server/model.mjs",
+      "rootMatches": true,
+      "stageMatches": true
+    },
+    {
+      "path": "server/sql.mjs",
+      "rootMatches": true,
+      "stageMatches": true
+    }
+  ],
+  "sourceArchiveTables": 10,
+  "fullSourceRows": 68919,
+  "snapshotSha256": "5ac0fd7bf0eb8495f3829c6fbd5359996d26f820edd08633375cfadafed7900a",
+  "checks": {
+    "sourceAndStageFrozen": true,
+    "privateChunksOnly": true,
+    "lockfilePresent": true,
+    "noExportOperatorStaged": true
+  },
+  "aclFingerprint": "8447e13383cdd0f3011b9a1b74aa1a69f0278cbdc468aead81a5b6ac83da1732"
+}

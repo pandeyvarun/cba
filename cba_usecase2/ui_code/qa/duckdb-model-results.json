@@ -1,0 +1,31 @@
+{
+  "startedAt": "2026-11-24T10:12:49.427Z",
+  "scope": "Two explicit local DuckDB API model requests over classified Statements evidence; no comments, answer text or suggestion text saved",
+  "calls": [
+    {
+      "kind": "suggestions",
+      "httpStatus": 200,
+      "excerptCount": 11,
+      "suggestions": 4,
+      "citationCount": 6,
+      "distinctCitations": 6,
+      "allCitationsResolve": true,
+      "allCitedRowsSelectedIssue": true,
+      "excerptsBoundedByServer": true,
+      "modelTagsOnlyProposed": true
+    },
+    {
+      "kind": "assistant",
+      "httpStatus": 200,
+      "excerptCount": 11,
+      "citationCount": 4,
+      "distinctCitations": 4,
+      "allCitationsResolve": true,
+      "allCitedRowsSelectedIssue": true,
+      "excerptsBoundedByServer": true
+    }
+  ],
+  "finishedAt": "2026-11-24T10:12:58.099Z",
+  "passed": true,
+  "limits": "Valid citation membership/lookup is not a complete semantic-entailment or classifier-accuracy evaluation."
+}

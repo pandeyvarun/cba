@@ -1,0 +1,324 @@
+{
+  "startedAt": "2026-11-24T10:53:23.569Z",
+  "finishedAt": "2026-11-24T10:54:29.716Z",
+  "scope": "Independent post-release read-only workspace metadata/source export; no app URL probing, customer excerpts, cookies or tokens saved",
+  "app": {
+    "name": "commbank-customer-insights",
+    "id": "7c05b422-8a65-4a79-ae32-5f8fa06b32d2",
+    "url": "https://commbank-customer-insights-7405609252709772.12.azure.databricksapps.com",
+    "state": "RUNNING",
+    "computeState": "ACTIVE",
+    "userApiScopes": [
+      "sql:restricted-query",
+      "model-serving"
+    ],
+    "resources": []
+  },
+  "deployment": {
+    "id": "01f1e7f524b412c2b105f8ce9d99056e",
+    "status": "SUCCEEDED",
+    "sourceCodePath": "/Workspace/Users/misha_tolmachev@epam.com/commbank-customer-insights-releases/2026-11-24T10-50-14-070Z-53e80eaa"
+  },
+  "expectedManifestHash": "76a4353fea48c37e9c827c4c3e4070bbaa19d333480e73d6c9c5f7f9d82a1f4a",
+  "actualRemoteManifestHash": "76a4353fea48c37e9c827c4c3e4070bbaa19d333480e73d6c9c5f7f9d82a1f4a",
+  "remoteFiles": [
+    "app.yaml",
+    "config/taxonomy-source.yaml",
+    "config/taxonomy.json",
+    "data/snapshot-000.bin",
+    "data/snapshot-001.bin",
+    "data/snapshot-002.bin",
+    "data/snapshot-003.bin",
+    "data/snapshot-004.bin",
+    "data/snapshot-005.bin",
+    "data/snapshot-006.bin",
+    "data/snapshot-007.bin",
+    "data/snapshot-008.bin",
+    "data/snapshot-009.bin",
+    "data/snapshot-010.bin",
+    "data/snapshot-011.bin",
+    "data/snapshot-manifest.json",
+    "package-lock.json",
+    "package.json",
+    "public/app.js",
+    "public/assets/beacon-bold.woff2",
+    "public/assets/beacon-regular.woff2",
+    "public/assets/commbank-logo.svg",
+    "public/calendar.js",
+    "public/domain.js",
+    "public/index.html",
+    "public/styles.css",
+    "public/tokens.css",
+    "server.mjs",
+    "server/auth.mjs",
+    "server/classified.mjs",
+    "server/data.mjs",
+    "server/duckdb.mjs",
+    "server/mock.mjs",
+    "server/model.mjs",
+    "server/sql.mjs"
+  ],
+  "byteChecks": [
+    {
+      "path": "app.yaml",
+      "bytes": 244,
+      "sha256": "af99f44c5b33642b19c8c77b204360c13740550d339f9fb12810ab1e8b2202e2",
+      "matches": true
+    },
+    {
+      "path": "config/taxonomy-source.yaml",
+      "bytes": 3839,
+      "sha256": "205eff71c16387c27c1d5b0ba80212d39ad96308cf7da04c5f1b351644848a40",
+      "matches": true
+    },
+    {
+      "path": "config/taxonomy.json",
+      "bytes": 2882,
+      "sha256": "75f619cf16093335f91ad53fae7f57eb6c9cca1415034872df69df59d6864700",
+      "matches": true
+    },
+    {
+      "path": "data/snapshot-000.bin",
+      "bytes": 3145728,
+      "sha256": "6dda016ca497edba0dec72f4dce9db359a456e306b39602326c892fdd4787791",
+      "matches": true
+    },
+    {
+      "path": "data/snapshot-001.bin",
+      "bytes": 3145728,
+      "sha256": "23bc964eda422b4ec3458b01d787721e718c3db2b73d5dc9367daf78eb9ff1e3",
+      "matches": true
+    },
+    {
+      "path": "data/snapshot-002.bin",
+      "bytes": 3145728,
+      "sha256": "5688e406a78a6e99221a833ca4af2a24dfcca4dd5b89d31bd3c3afdcb3eb8e62",
+      "matches": true
+    },
+    {
+      "path": "data/snapshot-003.bin",
+      "bytes": 3145728,
+      "sha256": "fc5017b7035b33f6bda2524ab30a911ec913a357adf778bfd303cb8a7058a9f8",
+      "matches": true
+    },
+    {
+      "path": "data/snapshot-004.bin",
+      "bytes": 3145728,
+      "sha256": "bad245c61bb0830d9d280fa2ccd2ce768b87ef5d7f37672ac5f0ed39d9723079",
+      "matches": true
+    },
+    {
+      "path": "data/snapshot-005.bin",
+      "bytes": 3145728,
+      "sha256": "7f8e752bb3ae18953d77ae726381f7cca090fda330eda1542ca0d1285df13f8c",
+      "matches": true
+    },
+    {
+      "path": "data/snapshot-006.bin",
+      "bytes": 3145728,
+      "sha256": "3c4dcedeb8f4d6747f3f30e2c79ee9221753cbf2e12ff69339fc0863ca0a4117",
+      "matches": true
+    },
+    {
+      "path": "data/snapshot-007.bin",
+      "bytes": 3145728,
+      "sha256": "2b27b9502dd3efc56b4a62e5c8261efc72740a9c2de42bc30e89b99c22aae7f0",
+      "matches": true
+    },
+    {
+      "path": "data/snapshot-008.bin",
+      "bytes": 3145728,
+      "sha256": "4638afc00d74751a8b239acaba76169f6f02ba032c3b5e519bdeef5904c4de2b",
+      "matches": true
+    },
+    {
+      "path": "data/snapshot-009.bin",
+      "bytes": 3145728,
+      "sha256": "c374fc9b6936a0b59121ffb24f1b85b2137aa7e3df04287f4cd225e149e97127",
+      "matches": true
+    },
+    {
+      "path": "data/snapshot-010.bin",
+      "bytes": 3145728,
+      "sha256": "193196d6f6aa690e4a8f4f7daae638d50828de751d8b6f4c44759f51efc77388",
+      "matches": true
+    },
+    {
+      "path": "data/snapshot-011.bin",
+      "bytes": 1847296,
+      "sha256": "06de512656f9d1a08ccec8faecbf0366a664c2ea7c8a821cfc98ff8a361d1c8f",
+      "matches": true
+    },
+    {
+      "path": "data/snapshot-manifest.json",
+      "bytes": 4139,
+      "sha256": "54b135f8b0d9f3c3d92c210e535e1ab8b0f7fac6ed3a40a1c9bf3fc73dc396db",
+      "matches": true
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 5725,
+      "sha256": "fb1aa01419189011a94ab472da2b8fcc1049560aea4d07a720809863756dca82",
+      "matches": true
+    },
+    {
+      "path": "package.json",
+      "bytes": 332,
+      "sha256": "4d8ac386989bf43068ab2bf36e043a85043c5184d1bc923f7e1332d4d0abe337",
+      "matches": true
+    },
+    {
+      "path": "public/app.js",
+      "bytes": 46842,
+      "sha256": "6865fd7b6132257b2c285721393188c714dc7730ddef1b33d190160197eb2c23",
+      "matches": true
+    },
+    {
+      "path": "public/assets/beacon-bold.woff2",
+      "bytes": 40528,
+      "sha256": "2e24646279e167565aa776176df4c6b8e9e14fc6c1aac590db99ebcad9e90314",
+      "matches": true
+    },
+    {
+      "path": "public/assets/beacon-regular.woff2",
+      "bytes": 38956,
+      "sha256": "d293b587386083d07304937d3d911159edf744256754728c236500135c81528c",
+      "matches": true
+    },
+    {
+      "path": "public/assets/commbank-logo.svg",
+      "bytes": 1233,
+      "sha256": "c0ba006f233a66cf29154cf4059aa0014a610bb1077acff3b057d175ef782268",
+      "matches": true
+    },
+    {
+      "path": "public/calendar.js",
+      "bytes": 11262,
+      "sha256": "6d76d3cf595ed3e3133010e8f82e37225ad4e94e71269e0cbd59d0e1a7b979db",
+      "matches": true
+    },
+    {
+      "path": "public/domain.js",
+      "bytes": 3485,
+      "sha256": "4fd7539520d9d5dc9e60b9df03f58156d680de1f21a75c014609f518ef9c9322",
+      "matches": true
+    },
+    {
+      "path": "public/index.html",
+      "bytes": 732,
+      "sha256": "a8393f8348b12b6443b96815c6985f20e4b7001b99d2ede0ce1faca745a80213",
+      "matches": true
+    },
+    {
+      "path": "public/styles.css",
+      "bytes": 46826,
+      "sha256": "573ca36dc69ebf5da8d9d0c067c719a5bf5ab2469afbf50e88616ffe2107ebdd",
+      "matches": true
+    },
+    {
+      "path": "public/tokens.css",
+      "bytes": 632,
+      "sha256": "4d5929cf41b850722779fae811a629d30d8ae54e0b78487dd47608799dada24f",
+      "matches": true
+    },
+    {
+      "path": "server.mjs",
+      "bytes": 7356,
+      "sha256": "3531930464c88da8c05463efac90bc955b262e684a8c33945307b4d2b6bc8d1e",
+      "matches": true
+    },
+    {
+      "path": "server/auth.mjs",
+      "bytes": 3259,
+      "sha256": "2e5d647c66b16446332e04088d4b62296aa7e310944bece7aa55d1d08bf570f0",
+      "matches": true
+    },
+    {
+      "path": "server/classified.mjs",
+      "bytes": 962,
+      "sha256": "ea511660baa865c785f3bc7198498de1e2e3ffdd3628bb75d44281286d031582",
+      "matches": true
+    },
+    {
+      "path": "server/data.mjs",
+      "bytes": 13088,
+      "sha256": "c2b0fed4170bced6d015b5a01c7e4c2dd594d75a90de336f4c3995ed761a82ac",
+      "matches": true
+    },
+    {
+      "path": "server/duckdb.mjs",
+      "bytes": 4852,
+      "sha256": "26817e7dd7237e519a3adac884da7171874175d8155c0843ed38e631dd285e72",
+      "matches": true
+    },
+    {
+      "path": "server/mock.mjs",
+      "bytes": 5721,
+      "sha256": "a7866a89dc3c14e8ba3db006fa8b5d3c6cb449c02231cd6bc34fbb45d501ae35",
+      "matches": true
+    },
+    {
+      "path": "server/model.mjs",
+      "bytes": 4896,
+      "sha256": "2cf431786f37f9eb14406789a7213712fd743f2baff487b58828c4faedf29018",
+      "matches": true
+    },
+    {
+      "path": "server/sql.mjs",
+      "bytes": 3099,
+      "sha256": "ac98113a9d201e3db0605b129abeb12afe9da9870e28c59500331f6fc7bd21bf",
+      "matches": true
+    }
+  ],
+  "acl": {
+    "expectedSha256": "8447e13383cdd0f3011b9a1b74aa1a69f0278cbdc468aead81a5b6ac83da1732",
+    "actualSha256": "8447e13383cdd0f3011b9a1b74aa1a69f0278cbdc468aead81a5b6ac83da1732",
+    "totalEntries": 2404,
+    "userEntries": 2403,
+    "userDomainCounts": {
+      "epam.com": 2403
+    },
+    "canUseUserEntries": 2402,
+    "groups": [
+      "admins"
+    ]
+  },
+  "checks": [
+    {
+      "name": "App identity and new active snapshot match reviewed release",
+      "pass": true
+    },
+    {
+      "name": "New snapshot SUCCEEDED and app RUNNING/ACTIVE",
+      "pass": true
+    },
+    {
+      "name": "All reviewed remote files match exact list and bytes",
+      "pass": true
+    },
+    {
+      "name": "Complete 2,404-entry ACL fingerprint unchanged",
+      "pass": true
+    },
+    {
+      "name": "2,402 user CAN_USE grants retained and no external user entries",
+      "pass": true
+    },
+    {
+      "name": "Existing management and inherited admins preserved without new group grant",
+      "pass": true
+    },
+    {
+      "name": "Exact OAuth scopes and empty resources unchanged",
+      "pass": true
+    },
+    {
+      "name": "Deployment source is the reviewed new release folder",
+      "pass": true
+    }
+  ],
+  "passed": 8,
+  "failed": 0,
+  "browserUILayoutAndModel": "Root native Edge verification is separate.",
+  "resourceOrPermissionMutationsByThisVerifier": false
+}

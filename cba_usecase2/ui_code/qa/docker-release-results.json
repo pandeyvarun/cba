@@ -1,0 +1,27 @@
+{
+  "at": "2026-11-24T11:34:17.199684+00:00",
+  "scope": "Docker packaging and future AWS handoff; no AWS resources provisioned and no Databricks app redeployment",
+  "fable": {
+    "review": "docs/fable-docker-review.md",
+    "verdict": "APPROVE for ARM64",
+    "nonblockingFixes": "Strict context verified with sentinels; failure reasons and default-base reporting corrected; ECS volume ownership documented"
+  },
+  "verifiedPlatform": "linux/arm64",
+  "checks": 32,
+  "contextProof": true,
+  "snapshotSha256": "5ac0fd7bf0eb8495f3829c6fbd5359996d26f820edd08633375cfadafed7900a",
+  "sourceTables": 10,
+  "sourceRows": 68919,
+  "amd64": {
+    "validated": false,
+    "reason": "Local QEMU cross-build failed the DuckDB native-driver guard with Illegal instruction; native x86 validation required before X86_64 deployment"
+  },
+  "sourceHashes": {
+    "Dockerfile": "88c65ade3584ef94b1cc1d0d5e59aef0cc2d21b5c9d15c6f91fae00b41fe725f",
+    ".dockerignore": "1eb62e1cb4b0ded6e3202fa282051bc426f9e2de58a3cb1a049f2758e80210e9",
+    "container/healthcheck.mjs": "a53494bff9229a7107b6ced68c87fd202dc7e79ef04d527056c77134854df47f",
+    "server.mjs": "6b6508be8a38e519585edde9b412102aec42a3b6af3f0c0857ec4d9c00da107d",
+    "server/auth.mjs": "705e81c46933ffe7953e0914324df5c2b3a87000c823a40f8c9670d8aeffbcdf"
+  },
+  "parallelPortableWorkModified": false
+}

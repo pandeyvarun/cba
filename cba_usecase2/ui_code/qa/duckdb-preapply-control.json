@@ -1,0 +1,10 @@
+{
+  "at": "2026-11-24T10:17:03.651Z",
+  "fableVerdict": "APPROVE deployment step",
+  "rollbackFolderVerified": true,
+  "rollbackSourceObjectId": "3173451461473075",
+  "reviewedFileCount": 35,
+  "unexpectedFiles": [],
+  "accessModel": "App ACL gates embedded data; no SQL/UC grants needed. User requested packaged data and previously authorized the app audience. Model remains user-authorized.",
+  "manifestHash": "b9f86770827504488811baadca97a57abf55b0ac8b1d9e9a9d7307919d0409cd"
+}

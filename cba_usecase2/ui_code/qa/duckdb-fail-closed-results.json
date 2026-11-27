@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-24T10:29:00.804Z",
+  "checks": [
+    {
+      "name": "Corrupt binary refuses startup before listening",
+      "pass": true
+    },
+    {
+      "name": "Missing binary refuses startup before listening",
+      "pass": true
+    },
+    {
+      "name": "Private route blocked /data/snapshot-000.bin",
+      "pass": true
+    },
+    {
+      "name": "Private route blocked /data/snapshot-manifest.json",
+      "pass": true
+    },
+    {
+      "name": "Private route blocked /private-export/comments_classified.ndjson",
+      "pass": true
+    },
+    {
+      "name": "Private route blocked /server/duckdb.mjs",
+      "pass": true
+    },
+    {
+      "name": "Private route blocked /node_modules/@duckdb/node-api/package.json",
+      "pass": true
+    },
+    {
+      "name": "Private route blocked /scripts/export-duckdb-source.mjs",
+      "pass": true
+    },
+    {
+      "name": "Verified snapshot reports ready",
+      "pass": true
+    }
+  ],
+  "passed": 9,
+  "failed": 0
+}

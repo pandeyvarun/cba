@@ -1,0 +1,145 @@
+{
+  "at": "2026-11-24T11:32:38.009Z",
+  "image": "cba-insights:docker-arm64",
+  "imageId": "sha256:97beaf65ec897285cbf11a821e491d4a476a024a3070b0cf75106290d77ccc70",
+  "platform": "linux/arm64",
+  "dockerfileDefaultBase": "node:22-bookworm-slim@sha256:66cb8ef75184df13dc0dcf866330488996b485d404db60555756865300ced4a5",
+  "snapshotSha256": "5ac0fd7bf0eb8495f3829c6fbd5359996d26f820edd08633375cfadafed7900a",
+  "sourceTables": 10,
+  "sourceRows": 68919,
+  "network": "Regression containers use none; one loopback-published preview check",
+  "realModelCalls": 0,
+  "awsResourcesCreated": false,
+  "checks": [
+    {
+      "name": "Linux image runs as non-root node",
+      "pass": true
+    },
+    {
+      "name": "Image CPU matches deployment target",
+      "pass": true
+    },
+    {
+      "name": "Readiness works without identity or network",
+      "pass": true
+    },
+    {
+      "name": "Liveness works without identity",
+      "pass": true
+    },
+    {
+      "name": "Default user mode rejects missing viewer outside Databricks",
+      "pass": true
+    },
+    {
+      "name": "Forwarded viewer can read the complete evidence inventory",
+      "pass": true
+    },
+    {
+      "name": "Container contains the latest issue-category UI label",
+      "pass": true
+    },
+    {
+      "name": "Business totals match the verified snapshot",
+      "pass": true
+    },
+    {
+      "name": "Evidence paging works",
+      "pass": true
+    },
+    {
+      "name": "Stable citation resolves",
+      "pass": true
+    },
+    {
+      "name": "Fixed-sample analysis works in the image",
+      "pass": true
+    },
+    {
+      "name": "Model additionally requires a user token",
+      "pass": true
+    },
+    {
+      "name": "TLS configuration rejects the internal HTTP origin",
+      "pass": true
+    },
+    {
+      "name": "External HTTPS origin reaches request validation without a model call",
+      "pass": true
+    },
+    {
+      "name": "Private route blocked /data/snapshot-000.bin",
+      "pass": true
+    },
+    {
+      "name": "Private route blocked /server/auth.mjs",
+      "pass": true
+    },
+    {
+      "name": "Private route blocked /config/taxonomy-source.yaml",
+      "pass": true
+    },
+    {
+      "name": "Complete DuckDB bytes match the source snapshot",
+      "pass": true
+    },
+    {
+      "name": "Runtime code is root-owned/read-only and process is non-root",
+      "pass": true
+    },
+    {
+      "name": "Image excludes scratch data, credentials, Git and parallel portable work",
+      "pass": true
+    },
+    {
+      "name": "All original source tables and rows survive container packaging",
+      "pass": true
+    },
+    {
+      "name": "Databricks still forces user mode and its listener defaults",
+      "pass": true
+    },
+    {
+      "name": "Databricks retains its HTTPS origin behavior",
+      "pass": true
+    },
+    {
+      "name": "Explicit local preview works without identity",
+      "pass": true
+    },
+    {
+      "name": "Invalid/unsafe startup configuration rejected APP_ORIGIN=https://example.test/",
+      "pass": true
+    },
+    {
+      "name": "Invalid/unsafe startup configuration rejected APP_HOST=::",
+      "pass": true
+    },
+    {
+      "name": "Invalid/unsafe startup configuration rejected AUTH_MODE=invalid",
+      "pass": true
+    },
+    {
+      "name": "Invalid/unsafe startup configuration rejected AUTH_MODE=local with APP_ORIGIN=https://example.test",
+      "pass": true
+    },
+    {
+      "name": "Read-only root without writable temporary storage refuses startup",
+      "pass": true
+    },
+    {
+      "name": "Preview port is published only on host loopback",
+      "pass": true
+    },
+    {
+      "name": "Container listener is reachable through Docker port mapping",
+      "pass": true
+    },
+    {
+      "name": "Init-enabled container stops promptly",
+      "pass": true
+    }
+  ],
+  "passed": 32,
+  "failed": 0
+}

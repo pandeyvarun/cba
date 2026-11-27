@@ -1,0 +1,63 @@
+{
+  "at": "2026-11-24T10:23:14.979Z",
+  "method": "Authenticated Microsoft Edge native UI; no browser cookies/tokens exported",
+  "url": "https://commbank-customer-insights-7405609252709772.12.azure.databricksapps.com",
+  "observations": {
+    "provenance": "DuckDB · Classified data · data to 21 Nov 2026",
+    "cleanAddressBar": true,
+    "filterStateSurvivedReload": true,
+    "allSourcesBusiness12m": {
+      "total": 200,
+      "CommBank": 116,
+      "ANZ": 43,
+      "NAB": 20,
+      "Westpac": 21
+    },
+    "statements12m": {
+      "total": 9,
+      "CommBank": 6,
+      "ANZ": 2,
+      "NAB": 1,
+      "Westpac": 0
+    },
+    "paging": {
+      "first": 20,
+      "loaded": 40,
+      "unique": 40
+    },
+    "cbaCitation": "cba-7399b8bd6133c8ef4b10f6afff24f6f4",
+    "competitorCitation": "bi-f6bcc9fbe09137439aef3afebb8acc7a-1",
+    "competitorCitationBank": "ANZ",
+    "generate": {
+      "completed": true,
+      "suggestions": 4,
+      "excerptCount": 9,
+      "competitorCitationResolved": true
+    },
+    "assistant": {
+      "completed": true,
+      "excerptCount": 9,
+      "citations": [
+        "cba-b9ab5e83d78ca3a142937462bea77deb",
+        "cba-8b6d1360c4f946cb213c0153ef010ee8",
+        "cba-4cac04a6abe77e00ca3a53be47ec9dac",
+        "cba-d69633c5e05bc4041598939db40dd9c1",
+        "bi-f6bcc9fbe09137439aef3afebb8acc7a-1",
+        "bi-963e8c66bd705f1c28c3f09590bb68ec-1"
+      ],
+      "inputReenabled": true
+    },
+    "readiness": {
+      "status": "ready",
+      "taxonomyValid": true,
+      "authMode": "user",
+      "engine": "DuckDB"
+    },
+    "finalView": "Product Business Statements with four generated proposals"
+  },
+  "limits": [
+    "Verified with the owner identity, not a separate colleague account.",
+    "Model citation membership is not a full semantic-entailment or classifier-quality evaluation."
+  ],
+  "passed": true
+}

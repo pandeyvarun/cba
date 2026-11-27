@@ -1,0 +1,23 @@
+{
+  "at": "2026-11-24T10:50:09.380Z",
+  "fableReview": "docs/fable-issue-trend-recheck.md",
+  "verdict": "All stated conditional-approval fixes applied",
+  "closedConditions": {
+    "allAxisLabelsHaveReadableClass": true,
+    "screenFontSizeGateIncludesXAndYAxis": true,
+    "browserEvidencePersisted": true,
+    "rollbackTargetsPreviousDuckDBRelease": true,
+    "architectureExplainsRollbackDataDependency": true
+  },
+  "browser": {
+    "passed": 26,
+    "failed": 0
+  },
+  "snapshotUnchanged": true,
+  "fableFinalVerdict": "APPROVE",
+  "fableFinalReview": "docs/fable-issue-trend-final.md",
+  "sourceManifestHash": "76a4353fea48c37e9c827c4c3e4070bbaa19d333480e73d6c9c5f7f9d82a1f4a",
+  "snapshotSha256": "5ac0fd7bf0eb8495f3829c6fbd5359996d26f820edd08633375cfadafed7900a",
+  "allRuntimeFilesFrozen": true,
+  "architectureDocument": "ARCHITECTURE.md"
+}

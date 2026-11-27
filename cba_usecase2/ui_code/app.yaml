@@ -1,0 +1,8 @@
+command: [node, server.mjs]
+env:
+  - name: DATABRICKS_SERVING_ENDPOINT
+    value: 'model-serving-usecase4-gpt-4_1'
+# The server validates the embedded snapshot before it begins listening.
+health_check:
+  path: /api/ready
+  timeout_seconds: 300

@@ -1,0 +1,4 @@
+data/*.bin binary
+public/assets/*.woff2 binary
+# Preserve the supplied taxonomy bytes used by startup SHA-256 validation.
+config/taxonomy-source.yaml -text whitespace=-blank-at-eol

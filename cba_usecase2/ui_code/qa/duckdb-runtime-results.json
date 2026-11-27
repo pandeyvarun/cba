@@ -1,0 +1,408 @@
+{
+  "at": "2026-11-24T10:29:03.478Z",
+  "engine": "DuckDB",
+  "networkCalls": 0,
+  "pages": 1263,
+  "recordsVisited": 62904,
+  "benchmarkCount": 29,
+  "checks": [
+    {
+      "name": "Local data auth has no token or AzureCLI dependency",
+      "pass": true
+    },
+    {
+      "name": "Complete archive and classified projection",
+      "pass": true
+    },
+    {
+      "name": "Both classifier lenses and disagreements preserved",
+      "pass": true
+    },
+    {
+      "name": "product business cohort parity",
+      "pass": true
+    },
+    {
+      "name": "product business relevance complete duplicate-free paging",
+      "pass": true
+    },
+    {
+      "name": "product business newest complete duplicate-free paging",
+      "pass": true
+    },
+    {
+      "name": "product business rating complete duplicate-free paging",
+      "pass": true
+    },
+    {
+      "name": "product personal cohort parity",
+      "pass": true
+    },
+    {
+      "name": "product personal unavailable competitor coverage remains null",
+      "pass": true
+    },
+    {
+      "name": "product personal relevance complete duplicate-free paging",
+      "pass": true
+    },
+    {
+      "name": "product personal newest complete duplicate-free paging",
+      "pass": true
+    },
+    {
+      "name": "product personal rating complete duplicate-free paging",
+      "pass": true
+    },
+    {
+      "name": "product general cohort parity",
+      "pass": true
+    },
+    {
+      "name": "product general unavailable competitor coverage remains null",
+      "pass": true
+    },
+    {
+      "name": "product general relevance complete duplicate-free paging",
+      "pass": true
+    },
+    {
+      "name": "product general newest complete duplicate-free paging",
+      "pass": true
+    },
+    {
+      "name": "product general rating complete duplicate-free paging",
+      "pass": true
+    },
+    {
+      "name": "yaml business cohort parity",
+      "pass": true
+    },
+    {
+      "name": "yaml business unavailable competitor coverage remains null",
+      "pass": true
+    },
+    {
+      "name": "yaml business relevance complete duplicate-free paging",
+      "pass": true
+    },
+    {
+      "name": "yaml business newest complete duplicate-free paging",
+      "pass": true
+    },
+    {
+      "name": "yaml business rating complete duplicate-free paging",
+      "pass": true
+    },
+    {
+      "name": "yaml personal cohort parity",
+      "pass": true
+    },
+    {
+      "name": "yaml personal unavailable competitor coverage remains null",
+      "pass": true
+    },
+    {
+      "name": "yaml personal relevance complete duplicate-free paging",
+      "pass": true
+    },
+    {
+      "name": "yaml personal newest complete duplicate-free paging",
+      "pass": true
+    },
+    {
+      "name": "yaml personal rating complete duplicate-free paging",
+      "pass": true
+    },
+    {
+      "name": "yaml general cohort parity",
+      "pass": true
+    },
+    {
+      "name": "yaml general unavailable competitor coverage remains null",
+      "pass": true
+    },
+    {
+      "name": "yaml general relevance complete duplicate-free paging",
+      "pass": true
+    },
+    {
+      "name": "yaml general newest complete duplicate-free paging",
+      "pass": true
+    },
+    {
+      "name": "yaml general rating complete duplicate-free paging",
+      "pass": true
+    },
+    {
+      "name": "All-time Business parity",
+      "pass": true
+    },
+    {
+      "name": "Client default 12 month parity",
+      "pass": true
+    },
+    {
+      "name": "Topic count Account closure & switching away",
+      "pass": true
+    },
+    {
+      "name": "Topic count Account opening & sign-up",
+      "pass": true
+    },
+    {
+      "name": "Topic count App crashes, bugs & performance",
+      "pass": true
+    },
+    {
+      "name": "Topic count App registration & device set-up",
+      "pass": true
+    },
+    {
+      "name": "Topic count Branch closures & in-person access",
+      "pass": true
+    },
+    {
+      "name": "Topic count Brand, pricing, policy & corporate conduct",
+      "pass": true
+    },
+    {
+      "name": "Topic count Card payments, tap-to-pay & digital wallets",
+      "pass": true
+    },
+    {
+      "name": "Topic count Cash, cheques, deposits & ATMs",
+      "pass": true
+    },
+    {
+      "name": "Topic count Customer service & support",
+      "pass": true
+    },
+    {
+      "name": "Topic count Fees, surcharges & charges",
+      "pass": true
+    },
+    {
+      "name": "Topic count Fraud, scam & account holds / blocks",
+      "pass": true
+    },
+    {
+      "name": "Topic count Identity verification (KYC / ID checks)",
+      "pass": true
+    },
+    {
+      "name": "Topic count International & FX transfers",
+      "pass": true
+    },
+    {
+      "name": "Topic count Investments, shares & super",
+      "pass": true
+    },
+    {
+      "name": "Topic count Loans, mortgages & interest rates",
+      "pass": true
+    },
+    {
+      "name": "Topic count Login, authentication & security lock-outs",
+      "pass": true
+    },
+    {
+      "name": "Topic count No specific product area identified",
+      "pass": true
+    },
+    {
+      "name": "Topic count Notifications & alerts",
+      "pass": true
+    },
+    {
+      "name": "Topic count Outages & service availability",
+      "pass": true
+    },
+    {
+      "name": "Topic count Overall app experience (general praise / complaint)",
+      "pass": true
+    },
+    {
+      "name": "Topic count Payment limits",
+      "pass": true
+    },
+    {
+      "name": "Topic count Payments & transfers (PayID / BPAY / Pay Anyone / NPP)",
+      "pass": true
+    },
+    {
+      "name": "Topic count Pending, delayed, failed or missing transactions",
+      "pass": true
+    },
+    {
+      "name": "Topic count Product applications (cards, loans, home loans)",
+      "pass": true
+    },
+    {
+      "name": "Topic count Security, privacy & device compatibility",
+      "pass": true
+    },
+    {
+      "name": "Topic count Statement access & download (PDF / e-statements)",
+      "pass": true
+    },
+    {
+      "name": "Topic count Statement accuracy, merchant names & descriptions",
+      "pass": true
+    },
+    {
+      "name": "Topic count Tax, interest & account letters / summaries",
+      "pass": true
+    },
+    {
+      "name": "Topic count Transaction history, search & export",
+      "pass": true
+    },
+    {
+      "name": "Topic count UI / UX, design & app features",
+      "pass": true
+    },
+    {
+      "name": "All 29 fixed-sample analyses available",
+      "pass": true
+    },
+    {
+      "name": "Every citation ID preserved byte for byte",
+      "pass": true
+    },
+    {
+      "name": "Citation resolves bi-01e49673f26e51da82e9478b5ff2712e-1",
+      "pass": true
+    },
+    {
+      "name": "Citation resolves bi-01e49673f26e51da82e9478b5ff2712e-1",
+      "pass": true
+    },
+    {
+      "name": "Citation resolves bi-02480c9d78c0d30fea14d85ae1e3d753-1",
+      "pass": true
+    },
+    {
+      "name": "Citation resolves bi-032a6bb8b57f27403631bf33bef98116-1",
+      "pass": true
+    },
+    {
+      "name": "Citation resolves bi-0537d7f2987635d11a5d283cd519d63d-1",
+      "pass": true
+    },
+    {
+      "name": "Citation resolves bi-07e035da3485c3f5fa2a9cfb352c56ca-1",
+      "pass": true
+    },
+    {
+      "name": "Citation resolves bi-080db0040c9b3b3c015036efbefb055c-1",
+      "pass": true
+    },
+    {
+      "name": "Citation resolves bi-0a71e12cb12e2d6948f8bc55856fc30c-1",
+      "pass": true
+    },
+    {
+      "name": "Citation resolves bi-1263f1b44d32431737bdab4391241478-1",
+      "pass": true
+    },
+    {
+      "name": "Citation resolves bi-13fb2d902bacc2d68ea70012410db927-1",
+      "pass": true
+    },
+    {
+      "name": "Citation resolves bi-14541190f855cc28cc98b108d4961277-1",
+      "pass": true
+    },
+    {
+      "name": "Snapshot provenance fixed and uses DuckDB",
+      "pass": true
+    },
+    {
+      "name": "Native database is read-only",
+      "pass": true
+    },
+    {
+      "name": "Data tests make zero network calls; SQL path forbidden",
+      "pass": true
+    },
+    {
+      "name": "Hosted data accepts viewer identity without SQL/model token and isolates users",
+      "pass": true
+    },
+    {
+      "name": "Model still requires forwarded user authorization",
+      "pass": true
+    }
+  ],
+  "scopeResults": [
+    {
+      "lens": "product",
+      "profile": "business",
+      "total": 324,
+      "banks": [
+        182,
+        63,
+        33,
+        46
+      ]
+    },
+    {
+      "lens": "product",
+      "profile": "personal",
+      "total": 2332,
+      "banks": [
+        2332,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "lens": "product",
+      "profile": "general",
+      "total": 7899,
+      "banks": [
+        7899,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "lens": "yaml",
+      "profile": "business",
+      "total": 297,
+      "banks": [
+        297,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "lens": "yaml",
+      "profile": "personal",
+      "total": 1884,
+      "banks": [
+        1884,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "lens": "yaml",
+      "profile": "general",
+      "total": 8232,
+      "banks": [
+        8232,
+        null,
+        null,
+        null
+      ]
+    }
+  ],
+  "passed": 82,
+  "failed": 0
+}

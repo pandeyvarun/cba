@@ -1,0 +1,114 @@
+{
+  "at": "2026-11-24T10:49:44.498Z",
+  "checks": [
+    {
+      "name": "Issue categories label is visible",
+      "pass": true
+    },
+    {
+      "name": "Previous implementation label is gone",
+      "pass": true
+    },
+    {
+      "name": "Selected context uses Issue categories",
+      "pass": true
+    },
+    {
+      "name": "Hover overlay contains the exact count",
+      "pass": true
+    },
+    {
+      "name": "Every month has an accessible focusable point",
+      "pass": true
+    },
+    {
+      "name": "Point 2025-12 matches numeric table",
+      "pass": true
+    },
+    {
+      "name": "Point 2026-02 matches numeric table",
+      "pass": true
+    },
+    {
+      "name": "Point 2026-03 matches numeric table",
+      "pass": true
+    },
+    {
+      "name": "Point 2026-05 matches numeric table",
+      "pass": true
+    },
+    {
+      "name": "Point 2026-06 matches numeric table",
+      "pass": true
+    },
+    {
+      "name": "Point 2026-07 matches numeric table",
+      "pass": true
+    },
+    {
+      "name": "Point 2026-08 matches numeric table",
+      "pass": true
+    },
+    {
+      "name": "Point 2026-09 matches numeric table",
+      "pass": true
+    },
+    {
+      "name": "Point 2026-10 matches numeric table",
+      "pass": true
+    },
+    {
+      "name": "Point 2026-11 matches numeric table",
+      "pass": true
+    },
+    {
+      "name": "Numeric point labels are visible without hover",
+      "pass": true
+    },
+    {
+      "name": "Keyboard focus shows one numeric overlay",
+      "pass": true
+    },
+    {
+      "name": "Keyboard overlay matches focused month",
+      "pass": true
+    },
+    {
+      "name": "Overlay closes after focus and pointer leave",
+      "pass": true
+    },
+    {
+      "name": "Issue choice persists with clean URL",
+      "pass": true
+    },
+    {
+      "name": "Dense chart hit regions preserve the selected month",
+      "pass": true
+    },
+    {
+      "name": "Chart numbers at least 10px at 1280",
+      "pass": true
+    },
+    {
+      "name": "Chart numbers at least 10px at 1440",
+      "pass": true
+    },
+    {
+      "name": "Chart numbers at least 10px at 1920",
+      "pass": true
+    },
+    {
+      "name": "Mobile has no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "No frontend JavaScript errors",
+      "pass": true
+    }
+  ],
+  "passed": 26,
+  "failed": 0,
+  "errors": [],
+  "densePoints": 13,
+  "source": "Real embedded DuckDB data; no model calls"
+}

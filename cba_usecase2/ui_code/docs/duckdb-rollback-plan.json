@@ -1,0 +1,18 @@
+{
+  "appName": "commbank-customer-insights",
+  "sourceCodePath": "/Workspace/Users/misha_tolmachev@epam.com/commbank-customer-insights-releases/2026-11-24T10-14-22-289Z-69099bc5",
+  "previousDeployment": "01f1e7f0736014ccaf09f403667ce7d7",
+  "sourceManifest": "b9f86770827504488811baadca97a57abf55b0ac8b1d9e9a9d7307919d0409cd",
+  "mode": "SNAPSHOT",
+  "action": "Redeploy exactly the previous verified DuckDB release. Preserve ACL, scopes and resources. Same complete embedded dataset; no SQL/UC data dependency.",
+  "request": {
+    "method": "POST",
+    "path": "/api/2.0/apps/commbank-customer-insights/deployments",
+    "body": {
+      "source_code_path": "/Workspace/Users/misha_tolmachev@epam.com/commbank-customer-insights-releases/2026-11-24T10-14-22-289Z-69099bc5",
+      "mode": "SNAPSHOT"
+    }
+  },
+  "folderVerifiedAt": "2026-11-24T10:18:50.566Z",
+  "sourceObjectId": "3173451461473125"
+}
